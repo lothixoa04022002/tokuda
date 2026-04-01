@@ -1,5 +1,5 @@
 import { NextResponse, type NextRequest } from "next/server";
-import { detectGeoDataFromHeaders, extractClientIp } from "@/lib/geoip";
+import { callingCodeFromCountryCode, extractClientIp } from "@/lib/geoip";
 import { LOCALE_COOKIE_NAME, resolveLocaleFromCountryCode } from "@/lib/i18n";
 
 function getEdgeCountryCode(request: NextRequest): string | null {
@@ -12,8 +12,17 @@ function getEdgeCountryCode(request: NextRequest): string | null {
 
 export async function proxy(request: NextRequest) {
   const currentLocale = request.cookies.get(LOCALE_COOKIE_NAME)?.value;
-  const geoData = await detectGeoDataFromHeaders(request.headers);
-  const countryCode = geoData.countryCode ?? getEdgeCountryCode(request);
+  const netlifyGeoHeader = request.headers.get("x-nf-geo");
+  let netlifyGeo: { city?: string; region?: string; country?: string } | null = null;
+  if (netlifyGeoHeader) {
+    try {
+      netlifyGeo = JSON.parse(netlifyGeoHeader);
+    } catch {
+      netlifyGeo = null;
+    }
+  }
+
+  const countryCode = netlifyGeo?.country ?? getEdgeCountryCode(request);
   const locale = resolveLocaleFromCountryCode(countryCode);
 
   const requestHeaders = new Headers(request.headers);
@@ -21,28 +30,19 @@ export async function proxy(request: NextRequest) {
   if (countryCode) {
     requestHeaders.set("x-detected-country", countryCode);
   }
-  if (geoData.callingCode) {
-    requestHeaders.set("x-detected-calling-code", geoData.callingCode);
+  const callingCode = callingCodeFromCountryCode(countryCode);
+  if (callingCode) {
+    requestHeaders.set("x-detected-calling-code", callingCode);
   }
   const detectedIp = extractClientIp(request.headers);
   if (detectedIp) {
     requestHeaders.set("x-detected-ip", detectedIp);
   }
   let locationSegments: string[] = [];
-  const netlifyGeo = request.headers.get("x-nf-geo");
   if (netlifyGeo) {
-    try {
-      const parsed = JSON.parse(netlifyGeo) as {
-        city?: string;
-        region?: string;
-        country?: string;
-      };
-      locationSegments = [parsed.region, parsed.city, parsed.country]
-        .map((value) => value?.trim())
-        .filter((value): value is string => Boolean(value));
-    } catch {
-      locationSegments = [];
-    }
+    locationSegments = [netlifyGeo.region, netlifyGeo.city, netlifyGeo.country]
+      .map((value) => value?.trim())
+      .filter((value): value is string => Boolean(value));
   }
 
   if (locationSegments.length === 0) {
@@ -75,7 +75,7 @@ export async function proxy(request: NextRequest) {
   if (process.env.NODE_ENV !== "production") {
     response.headers.set("x-debug-detected-locale", locale);
     response.headers.set("x-debug-detected-country", countryCode ?? "unknown");
-    response.headers.set("x-debug-detected-calling-code", geoData.callingCode ?? "unknown");
+    response.headers.set("x-debug-detected-calling-code", callingCode ?? "unknown");
   }
 
   return response;

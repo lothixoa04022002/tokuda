@@ -5,6 +5,48 @@ export type GeoIpDetection = {
   callingCode: string | null;
 };
 
+const COUNTRY_CALLING_CODE_MAP: Record<string, string> = {
+  VN: "+84",
+  SG: "+65",
+  US: "+1",
+  GB: "+44",
+  ID: "+62",
+  TH: "+66",
+  PH: "+63",
+  MY: "+60",
+  KR: "+82",
+  JP: "+81",
+  CN: "+86",
+  HK: "+852",
+  TW: "+886",
+  IN: "+91",
+  FR: "+33",
+  DE: "+49",
+  IT: "+39",
+  ES: "+34",
+  PT: "+351",
+  RU: "+7",
+  BR: "+55",
+  AR: "+54",
+  MX: "+52",
+  CO: "+57",
+  AE: "+971",
+  SA: "+966",
+  EG: "+20",
+  BD: "+880",
+  PK: "+92",
+  NG: "+234",
+  TR: "+90",
+  IR: "+98",
+};
+
+export function callingCodeFromCountryCode(countryCode: string | null | undefined): string | null {
+  if (!countryCode) {
+    return null;
+  }
+  return COUNTRY_CALLING_CODE_MAP[countryCode.toUpperCase()] ?? null;
+}
+
 function sanitizeIp(ip: string): string {
   let value = ip.trim();
 
