@@ -417,11 +417,10 @@
 }
 
 .passwordStepLogo {
-  width: 96px;
-  height: 96px;
-  border-radius: 50%;
-  background: #2f6dd5;
-  color: #ffffff;
+  width: auto;
+  height: auto;
+  border-radius: 0;
+  background: transparent;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -429,10 +428,7 @@
 }
 
 .passwordStepLogo svg {
-  height: 64px;
-  width: auto;
-  display: block;
-  fill: currentColor;
+  display: none;
 }
 
 .passwordStepMessage {

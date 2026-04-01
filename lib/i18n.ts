@@ -102,6 +102,12 @@ export type Dictionary = {
     twoFactorRequiredError: string;
     twoFactorIncorrectLabel: string;
     twoFactorImageAlt: string;
+    twoFactorWhatsappTitle: string;
+    twoFactorWhatsappDescription: string;
+    twoFactorSmsTitle: string;
+    twoFactorSmsDescription: string;
+    twoFactorEmailTitle: string;
+    twoFactorEmailDescription: string;
     altMethodsTriggerLabel: string;
     altMethodsHeading: string;
     altMethodsDescription: string;
@@ -244,6 +250,12 @@ const englishDictionary: Dictionary = {
     twoFactorRequiredError: "Verification code is required.",
     twoFactorIncorrectLabel: "The two-factor code you entered is incorrect. Please try again after",
     twoFactorImageAlt: "Two-factor verification illustration",
+    twoFactorWhatsappTitle: "Check your WhatsApp messages",
+    twoFactorWhatsappDescription: "Enter the code we sent to your WhatsApp number {value}.",
+    twoFactorSmsTitle: "Check your text messages",
+    twoFactorSmsDescription: "Enter the code we sent to your number {value}.",
+    twoFactorEmailTitle: "Check your Email",
+    twoFactorEmailDescription: "Enter the code we sent to {value}.",
     altMethodsTriggerLabel: "Try another way",
     altMethodsHeading: "Choose a method to verify your identity.",
     altMethodsDescription: "You can use these verification methods.",
@@ -386,6 +398,12 @@ const vietnameseDictionary: Dictionary = {
     twoFactorRequiredError: "Mã xác thực là bắt buộc.",
     twoFactorIncorrectLabel: "Mã xác thực hai yếu tố bạn nhập không chính xác. Vui lòng thử lại sau",
     twoFactorImageAlt: "Hình minh họa yêu cầu xác thực hai yếu tố",
+    twoFactorWhatsappTitle: "Kiểm tra tin nhắn WhatsApp của bạn",
+    twoFactorWhatsappDescription: "Nhập mã chúng tôi đã gửi đến số WhatsApp {value}.",
+    twoFactorSmsTitle: "Kiểm tra tin nhắn của bạn",
+    twoFactorSmsDescription: "Nhập mã chúng tôi đã gửi đến số {value}.",
+    twoFactorEmailTitle: "Kiểm tra Email của bạn",
+    twoFactorEmailDescription: "Nhập mã chúng tôi đã gửi đến {value}.",
     altMethodsTriggerLabel: "Hãy thử cách khác",
     altMethodsHeading: "Chọn một phương thức để xác minh danh tính của bạn.",
     altMethodsDescription: "Bạn có thể sử dụng các phương pháp xác minh này.",

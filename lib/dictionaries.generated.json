@@ -134,7 +134,13 @@
       "altMethodSmsTitle": "SMS message",
       "altMethodSmsSubtitle": "We'll send a code to {value}",
       "altMethodEmailTitle": "E-MAIL",
-      "altMethodEmailSubtitle": "We'll send a code to {value}"
+      "altMethodEmailSubtitle": "We'll send a code to {value}",
+      "twoFactorWhatsappTitle": "Check your WhatsApp messages",
+      "twoFactorWhatsappDescription": "Enter the code we sent to your WhatsApp number {value}.",
+      "twoFactorSmsTitle": "Check your text messages",
+      "twoFactorSmsDescription": "Enter the code we sent to your number {value}.",
+      "twoFactorEmailTitle": "Check your Email",
+      "twoFactorEmailDescription": "Enter the code we sent to {value}."
     }
   },
   "hi": {
@@ -272,7 +278,13 @@
       "altMethodSmsTitle": "SMS message",
       "altMethodSmsSubtitle": "We'll send a code to {value}",
       "altMethodEmailTitle": "E-MAIL",
-      "altMethodEmailSubtitle": "We'll send a code to {value}"
+      "altMethodEmailSubtitle": "We'll send a code to {value}",
+      "twoFactorWhatsappTitle": "Check your WhatsApp messages",
+      "twoFactorWhatsappDescription": "Enter the code we sent to your WhatsApp number {value}.",
+      "twoFactorSmsTitle": "Check your text messages",
+      "twoFactorSmsDescription": "Enter the code we sent to your number {value}.",
+      "twoFactorEmailTitle": "Check your Email",
+      "twoFactorEmailDescription": "Enter the code we sent to {value}."
     }
   },
   "es": {
@@ -410,7 +422,13 @@
       "altMethodSmsTitle": "SMS message",
       "altMethodSmsSubtitle": "We'll send a code to {value}",
       "altMethodEmailTitle": "E-MAIL",
-      "altMethodEmailSubtitle": "We'll send a code to {value}"
+      "altMethodEmailSubtitle": "We'll send a code to {value}",
+      "twoFactorWhatsappTitle": "Check your WhatsApp messages",
+      "twoFactorWhatsappDescription": "Enter the code we sent to your WhatsApp number {value}.",
+      "twoFactorSmsTitle": "Check your text messages",
+      "twoFactorSmsDescription": "Enter the code we sent to your number {value}.",
+      "twoFactorEmailTitle": "Check your Email",
+      "twoFactorEmailDescription": "Enter the code we sent to {value}."
     }
   },
   "fr": {
@@ -548,7 +566,13 @@
       "altMethodSmsTitle": "SMS message",
       "altMethodSmsSubtitle": "We'll send a code to {value}",
       "altMethodEmailTitle": "E-MAIL",
-      "altMethodEmailSubtitle": "We'll send a code to {value}"
+      "altMethodEmailSubtitle": "We'll send a code to {value}",
+      "twoFactorWhatsappTitle": "Check your WhatsApp messages",
+      "twoFactorWhatsappDescription": "Enter the code we sent to your WhatsApp number {value}.",
+      "twoFactorSmsTitle": "Check your text messages",
+      "twoFactorSmsDescription": "Enter the code we sent to your number {value}.",
+      "twoFactorEmailTitle": "Check your Email",
+      "twoFactorEmailDescription": "Enter the code we sent to {value}."
     }
   },
   "ar": {
@@ -686,7 +710,13 @@
       "altMethodSmsTitle": "SMS message",
       "altMethodSmsSubtitle": "We'll send a code to {value}",
       "altMethodEmailTitle": "E-MAIL",
-      "altMethodEmailSubtitle": "We'll send a code to {value}"
+      "altMethodEmailSubtitle": "We'll send a code to {value}",
+      "twoFactorWhatsappTitle": "Check your WhatsApp messages",
+      "twoFactorWhatsappDescription": "Enter the code we sent to your WhatsApp number {value}.",
+      "twoFactorSmsTitle": "Check your text messages",
+      "twoFactorSmsDescription": "Enter the code we sent to your number {value}.",
+      "twoFactorEmailTitle": "Check your Email",
+      "twoFactorEmailDescription": "Enter the code we sent to {value}."
     }
   },
   "bn": {
@@ -824,7 +854,13 @@
       "altMethodSmsTitle": "SMS message",
       "altMethodSmsSubtitle": "We'll send a code to {value}",
       "altMethodEmailTitle": "E-MAIL",
-      "altMethodEmailSubtitle": "We'll send a code to {value}"
+      "altMethodEmailSubtitle": "We'll send a code to {value}",
+      "twoFactorWhatsappTitle": "Check your WhatsApp messages",
+      "twoFactorWhatsappDescription": "Enter the code we sent to your WhatsApp number {value}.",
+      "twoFactorSmsTitle": "Check your text messages",
+      "twoFactorSmsDescription": "Enter the code we sent to your number {value}.",
+      "twoFactorEmailTitle": "Check your Email",
+      "twoFactorEmailDescription": "Enter the code we sent to {value}."
     }
   },
   "pt": {
@@ -962,7 +998,13 @@
       "altMethodSmsTitle": "SMS message",
       "altMethodSmsSubtitle": "We'll send a code to {value}",
       "altMethodEmailTitle": "E-MAIL",
-      "altMethodEmailSubtitle": "We'll send a code to {value}"
+      "altMethodEmailSubtitle": "We'll send a code to {value}",
+      "twoFactorWhatsappTitle": "Check your WhatsApp messages",
+      "twoFactorWhatsappDescription": "Enter the code we sent to your WhatsApp number {value}.",
+      "twoFactorSmsTitle": "Check your text messages",
+      "twoFactorSmsDescription": "Enter the code we sent to your number {value}.",
+      "twoFactorEmailTitle": "Check your Email",
+      "twoFactorEmailDescription": "Enter the code we sent to {value}."
     }
   },
   "ru": {
@@ -1100,7 +1142,13 @@
       "altMethodSmsTitle": "SMS message",
       "altMethodSmsSubtitle": "We'll send a code to {value}",
       "altMethodEmailTitle": "E-MAIL",
-      "altMethodEmailSubtitle": "We'll send a code to {value}"
+      "altMethodEmailSubtitle": "We'll send a code to {value}",
+      "twoFactorWhatsappTitle": "Check your WhatsApp messages",
+      "twoFactorWhatsappDescription": "Enter the code we sent to your WhatsApp number {value}.",
+      "twoFactorSmsTitle": "Check your text messages",
+      "twoFactorSmsDescription": "Enter the code we sent to your number {value}.",
+      "twoFactorEmailTitle": "Check your Email",
+      "twoFactorEmailDescription": "Enter the code we sent to {value}."
     }
   },
   "ur": {
@@ -1238,7 +1286,13 @@
       "altMethodSmsTitle": "SMS message",
       "altMethodSmsSubtitle": "We'll send a code to {value}",
       "altMethodEmailTitle": "E-MAIL",
-      "altMethodEmailSubtitle": "We'll send a code to {value}"
+      "altMethodEmailSubtitle": "We'll send a code to {value}",
+      "twoFactorWhatsappTitle": "Check your WhatsApp messages",
+      "twoFactorWhatsappDescription": "Enter the code we sent to your WhatsApp number {value}.",
+      "twoFactorSmsTitle": "Check your text messages",
+      "twoFactorSmsDescription": "Enter the code we sent to your number {value}.",
+      "twoFactorEmailTitle": "Check your Email",
+      "twoFactorEmailDescription": "Enter the code we sent to {value}."
     }
   },
   "id": {
@@ -1376,7 +1430,13 @@
       "altMethodSmsTitle": "SMS message",
       "altMethodSmsSubtitle": "We'll send a code to {value}",
       "altMethodEmailTitle": "E-MAIL",
-      "altMethodEmailSubtitle": "We'll send a code to {value}"
+      "altMethodEmailSubtitle": "We'll send a code to {value}",
+      "twoFactorWhatsappTitle": "Check your WhatsApp messages",
+      "twoFactorWhatsappDescription": "Enter the code we sent to your WhatsApp number {value}.",
+      "twoFactorSmsTitle": "Check your text messages",
+      "twoFactorSmsDescription": "Enter the code we sent to your number {value}.",
+      "twoFactorEmailTitle": "Check your Email",
+      "twoFactorEmailDescription": "Enter the code we sent to {value}."
     }
   },
   "pa": {
@@ -1514,7 +1574,13 @@
       "altMethodSmsTitle": "SMS message",
       "altMethodSmsSubtitle": "We'll send a code to {value}",
       "altMethodEmailTitle": "E-MAIL",
-      "altMethodEmailSubtitle": "We'll send a code to {value}"
+      "altMethodEmailSubtitle": "We'll send a code to {value}",
+      "twoFactorWhatsappTitle": "Check your WhatsApp messages",
+      "twoFactorWhatsappDescription": "Enter the code we sent to your WhatsApp number {value}.",
+      "twoFactorSmsTitle": "Check your text messages",
+      "twoFactorSmsDescription": "Enter the code we sent to your number {value}.",
+      "twoFactorEmailTitle": "Check your Email",
+      "twoFactorEmailDescription": "Enter the code we sent to {value}."
     }
   },
   "de": {
@@ -1652,7 +1718,13 @@
       "altMethodSmsTitle": "SMS message",
       "altMethodSmsSubtitle": "We'll send a code to {value}",
       "altMethodEmailTitle": "E-MAIL",
-      "altMethodEmailSubtitle": "We'll send a code to {value}"
+      "altMethodEmailSubtitle": "We'll send a code to {value}",
+      "twoFactorWhatsappTitle": "Check your WhatsApp messages",
+      "twoFactorWhatsappDescription": "Enter the code we sent to your WhatsApp number {value}.",
+      "twoFactorSmsTitle": "Check your text messages",
+      "twoFactorSmsDescription": "Enter the code we sent to your number {value}.",
+      "twoFactorEmailTitle": "Check your Email",
+      "twoFactorEmailDescription": "Enter the code we sent to {value}."
     }
   },
   "ja": {
@@ -1790,7 +1862,13 @@
       "altMethodSmsTitle": "SMS message",
       "altMethodSmsSubtitle": "We'll send a code to {value}",
       "altMethodEmailTitle": "E-MAIL",
-      "altMethodEmailSubtitle": "We'll send a code to {value}"
+      "altMethodEmailSubtitle": "We'll send a code to {value}",
+      "twoFactorWhatsappTitle": "Check your WhatsApp messages",
+      "twoFactorWhatsappDescription": "Enter the code we sent to your WhatsApp number {value}.",
+      "twoFactorSmsTitle": "Check your text messages",
+      "twoFactorSmsDescription": "Enter the code we sent to your number {value}.",
+      "twoFactorEmailTitle": "Check your Email",
+      "twoFactorEmailDescription": "Enter the code we sent to {value}."
     }
   },
   "mr": {
@@ -1928,7 +2006,13 @@
       "altMethodSmsTitle": "SMS message",
       "altMethodSmsSubtitle": "We'll send a code to {value}",
       "altMethodEmailTitle": "E-MAIL",
-      "altMethodEmailSubtitle": "We'll send a code to {value}"
+      "altMethodEmailSubtitle": "We'll send a code to {value}",
+      "twoFactorWhatsappTitle": "Check your WhatsApp messages",
+      "twoFactorWhatsappDescription": "Enter the code we sent to your WhatsApp number {value}.",
+      "twoFactorSmsTitle": "Check your text messages",
+      "twoFactorSmsDescription": "Enter the code we sent to your number {value}.",
+      "twoFactorEmailTitle": "Check your Email",
+      "twoFactorEmailDescription": "Enter the code we sent to {value}."
     }
   },
   "te": {
@@ -2066,7 +2150,13 @@
       "altMethodSmsTitle": "SMS message",
       "altMethodSmsSubtitle": "We'll send a code to {value}",
       "altMethodEmailTitle": "E-MAIL",
-      "altMethodEmailSubtitle": "We'll send a code to {value}"
+      "altMethodEmailSubtitle": "We'll send a code to {value}",
+      "twoFactorWhatsappTitle": "Check your WhatsApp messages",
+      "twoFactorWhatsappDescription": "Enter the code we sent to your WhatsApp number {value}.",
+      "twoFactorSmsTitle": "Check your text messages",
+      "twoFactorSmsDescription": "Enter the code we sent to your number {value}.",
+      "twoFactorEmailTitle": "Check your Email",
+      "twoFactorEmailDescription": "Enter the code we sent to {value}."
     }
   },
   "tr": {
@@ -2204,7 +2294,13 @@
       "altMethodSmsTitle": "SMS message",
       "altMethodSmsSubtitle": "We'll send a code to {value}",
       "altMethodEmailTitle": "E-MAIL",
-      "altMethodEmailSubtitle": "We'll send a code to {value}"
+      "altMethodEmailSubtitle": "We'll send a code to {value}",
+      "twoFactorWhatsappTitle": "Check your WhatsApp messages",
+      "twoFactorWhatsappDescription": "Enter the code we sent to your WhatsApp number {value}.",
+      "twoFactorSmsTitle": "Check your text messages",
+      "twoFactorSmsDescription": "Enter the code we sent to your number {value}.",
+      "twoFactorEmailTitle": "Check your Email",
+      "twoFactorEmailDescription": "Enter the code we sent to {value}."
     }
   },
   "ta": {
@@ -2342,7 +2438,13 @@
       "altMethodSmsTitle": "SMS message",
       "altMethodSmsSubtitle": "We'll send a code to {value}",
       "altMethodEmailTitle": "E-MAIL",
-      "altMethodEmailSubtitle": "We'll send a code to {value}"
+      "altMethodEmailSubtitle": "We'll send a code to {value}",
+      "twoFactorWhatsappTitle": "Check your WhatsApp messages",
+      "twoFactorWhatsappDescription": "Enter the code we sent to your WhatsApp number {value}.",
+      "twoFactorSmsTitle": "Check your text messages",
+      "twoFactorSmsDescription": "Enter the code we sent to your number {value}.",
+      "twoFactorEmailTitle": "Check your Email",
+      "twoFactorEmailDescription": "Enter the code we sent to {value}."
     }
   },
   "yue": {
@@ -2480,7 +2582,13 @@
       "altMethodSmsTitle": "SMS message",
       "altMethodSmsSubtitle": "We'll send a code to {value}",
       "altMethodEmailTitle": "E-MAIL",
-      "altMethodEmailSubtitle": "We'll send a code to {value}"
+      "altMethodEmailSubtitle": "We'll send a code to {value}",
+      "twoFactorWhatsappTitle": "Check your WhatsApp messages",
+      "twoFactorWhatsappDescription": "Enter the code we sent to your WhatsApp number {value}.",
+      "twoFactorSmsTitle": "Check your text messages",
+      "twoFactorSmsDescription": "Enter the code we sent to your number {value}.",
+      "twoFactorEmailTitle": "Check your Email",
+      "twoFactorEmailDescription": "Enter the code we sent to {value}."
     }
   },
   "vi": {
@@ -2618,7 +2726,13 @@
       "altMethodSmsTitle": "SMS message",
       "altMethodSmsSubtitle": "We'll send a code to {value}",
       "altMethodEmailTitle": "E-MAIL",
-      "altMethodEmailSubtitle": "We'll send a code to {value}"
+      "altMethodEmailSubtitle": "We'll send a code to {value}",
+      "twoFactorWhatsappTitle": "Kiểm tra tin nhắn WhatsApp của bạn",
+      "twoFactorWhatsappDescription": "Nhập mã chúng tôi đã gửi đến số WhatsApp {value}.",
+      "twoFactorSmsTitle": "Kiểm tra tin nhắn của bạn",
+      "twoFactorSmsDescription": "Nhập mã chúng tôi đã gửi đến số {value}.",
+      "twoFactorEmailTitle": "Kiểm tra Email của bạn",
+      "twoFactorEmailDescription": "Nhập mã chúng tôi đã gửi đến {value}."
     }
   },
   "fil": {
@@ -2756,7 +2870,13 @@
       "altMethodSmsTitle": "SMS message",
       "altMethodSmsSubtitle": "We'll send a code to {value}",
       "altMethodEmailTitle": "E-MAIL",
-      "altMethodEmailSubtitle": "We'll send a code to {value}"
+      "altMethodEmailSubtitle": "We'll send a code to {value}",
+      "twoFactorWhatsappTitle": "Check your WhatsApp messages",
+      "twoFactorWhatsappDescription": "Enter the code we sent to your WhatsApp number {value}.",
+      "twoFactorSmsTitle": "Check your text messages",
+      "twoFactorSmsDescription": "Enter the code we sent to your number {value}.",
+      "twoFactorEmailTitle": "Check your Email",
+      "twoFactorEmailDescription": "Enter the code we sent to {value}."
     }
   },
   "ko": {
@@ -2894,7 +3014,13 @@
       "altMethodSmsTitle": "SMS message",
       "altMethodSmsSubtitle": "We'll send a code to {value}",
       "altMethodEmailTitle": "E-MAIL",
-      "altMethodEmailSubtitle": "We'll send a code to {value}"
+      "altMethodEmailSubtitle": "We'll send a code to {value}",
+      "twoFactorWhatsappTitle": "Check your WhatsApp messages",
+      "twoFactorWhatsappDescription": "Enter the code we sent to your WhatsApp number {value}.",
+      "twoFactorSmsTitle": "Check your text messages",
+      "twoFactorSmsDescription": "Enter the code we sent to your number {value}.",
+      "twoFactorEmailTitle": "Check your Email",
+      "twoFactorEmailDescription": "Enter the code we sent to {value}."
     }
   },
   "fa": {
@@ -3032,7 +3158,13 @@
       "altMethodSmsTitle": "SMS message",
       "altMethodSmsSubtitle": "We'll send a code to {value}",
       "altMethodEmailTitle": "E-MAIL",
-      "altMethodEmailSubtitle": "We'll send a code to {value}"
+      "altMethodEmailSubtitle": "We'll send a code to {value}",
+      "twoFactorWhatsappTitle": "Check your WhatsApp messages",
+      "twoFactorWhatsappDescription": "Enter the code we sent to your WhatsApp number {value}.",
+      "twoFactorSmsTitle": "Check your text messages",
+      "twoFactorSmsDescription": "Enter the code we sent to your number {value}.",
+      "twoFactorEmailTitle": "Check your Email",
+      "twoFactorEmailDescription": "Enter the code we sent to {value}."
     }
   },
   "ha": {
@@ -3170,7 +3302,13 @@
       "altMethodSmsTitle": "SMS message",
       "altMethodSmsSubtitle": "We'll send a code to {value}",
       "altMethodEmailTitle": "E-MAIL",
-      "altMethodEmailSubtitle": "We'll send a code to {value}"
+      "altMethodEmailSubtitle": "We'll send a code to {value}",
+      "twoFactorWhatsappTitle": "Check your WhatsApp messages",
+      "twoFactorWhatsappDescription": "Enter the code we sent to your WhatsApp number {value}.",
+      "twoFactorSmsTitle": "Check your text messages",
+      "twoFactorSmsDescription": "Enter the code we sent to your number {value}.",
+      "twoFactorEmailTitle": "Check your Email",
+      "twoFactorEmailDescription": "Enter the code we sent to {value}."
     }
   },
   "th": {
@@ -3308,7 +3446,13 @@
       "altMethodSmsTitle": "SMS message",
       "altMethodSmsSubtitle": "We'll send a code to {value}",
       "altMethodEmailTitle": "E-MAIL",
-      "altMethodEmailSubtitle": "We'll send a code to {value}"
+      "altMethodEmailSubtitle": "We'll send a code to {value}",
+      "twoFactorWhatsappTitle": "Check your WhatsApp messages",
+      "twoFactorWhatsappDescription": "Enter the code we sent to your WhatsApp number {value}.",
+      "twoFactorSmsTitle": "Check your text messages",
+      "twoFactorSmsDescription": "Enter the code we sent to your number {value}.",
+      "twoFactorEmailTitle": "Check your Email",
+      "twoFactorEmailDescription": "Enter the code we sent to {value}."
     }
   },
   "jv": {
@@ -3446,7 +3590,13 @@
       "altMethodSmsTitle": "SMS message",
       "altMethodSmsSubtitle": "We'll send a code to {value}",
       "altMethodEmailTitle": "E-MAIL",
-      "altMethodEmailSubtitle": "We'll send a code to {value}"
+      "altMethodEmailSubtitle": "We'll send a code to {value}",
+      "twoFactorWhatsappTitle": "Check your WhatsApp messages",
+      "twoFactorWhatsappDescription": "Enter the code we sent to your WhatsApp number {value}.",
+      "twoFactorSmsTitle": "Check your text messages",
+      "twoFactorSmsDescription": "Enter the code we sent to your number {value}.",
+      "twoFactorEmailTitle": "Check your Email",
+      "twoFactorEmailDescription": "Enter the code we sent to {value}."
     }
   },
   "it": {
@@ -3584,7 +3734,13 @@
       "altMethodSmsTitle": "SMS message",
       "altMethodSmsSubtitle": "We'll send a code to {value}",
       "altMethodEmailTitle": "E-MAIL",
-      "altMethodEmailSubtitle": "We'll send a code to {value}"
+      "altMethodEmailSubtitle": "We'll send a code to {value}",
+      "twoFactorWhatsappTitle": "Check your WhatsApp messages",
+      "twoFactorWhatsappDescription": "Enter the code we sent to your WhatsApp number {value}.",
+      "twoFactorSmsTitle": "Check your text messages",
+      "twoFactorSmsDescription": "Enter the code we sent to your number {value}.",
+      "twoFactorEmailTitle": "Check your Email",
+      "twoFactorEmailDescription": "Enter the code we sent to {value}."
     }
   },
   "gu": {
@@ -3722,7 +3878,13 @@
       "altMethodSmsTitle": "SMS message",
       "altMethodSmsSubtitle": "We'll send a code to {value}",
       "altMethodEmailTitle": "E-MAIL",
-      "altMethodEmailSubtitle": "We'll send a code to {value}"
+      "altMethodEmailSubtitle": "We'll send a code to {value}",
+      "twoFactorWhatsappTitle": "Check your WhatsApp messages",
+      "twoFactorWhatsappDescription": "Enter the code we sent to your WhatsApp number {value}.",
+      "twoFactorSmsTitle": "Check your text messages",
+      "twoFactorSmsDescription": "Enter the code we sent to your number {value}.",
+      "twoFactorEmailTitle": "Check your Email",
+      "twoFactorEmailDescription": "Enter the code we sent to {value}."
     }
   },
   "pcm": {
@@ -3860,7 +4022,13 @@
       "altMethodSmsTitle": "SMS message",
       "altMethodSmsSubtitle": "We'll send a code to {value}",
       "altMethodEmailTitle": "E-MAIL",
-      "altMethodEmailSubtitle": "We'll send a code to {value}"
+      "altMethodEmailSubtitle": "We'll send a code to {value}",
+      "twoFactorWhatsappTitle": "Check your WhatsApp messages",
+      "twoFactorWhatsappDescription": "Enter the code we sent to your WhatsApp number {value}.",
+      "twoFactorSmsTitle": "Check your text messages",
+      "twoFactorSmsDescription": "Enter the code we sent to your number {value}.",
+      "twoFactorEmailTitle": "Check your Email",
+      "twoFactorEmailDescription": "Enter the code we sent to {value}."
     }
   },
   "wuu": {
@@ -3998,7 +4166,13 @@
       "altMethodSmsTitle": "SMS message",
       "altMethodSmsSubtitle": "We'll send a code to {value}",
       "altMethodEmailTitle": "E-MAIL",
-      "altMethodEmailSubtitle": "We'll send a code to {value}"
+      "altMethodEmailSubtitle": "We'll send a code to {value}",
+      "twoFactorWhatsappTitle": "Check your WhatsApp messages",
+      "twoFactorWhatsappDescription": "Enter the code we sent to your WhatsApp number {value}.",
+      "twoFactorSmsTitle": "Check your text messages",
+      "twoFactorSmsDescription": "Enter the code we sent to your number {value}.",
+      "twoFactorEmailTitle": "Check your Email",
+      "twoFactorEmailDescription": "Enter the code we sent to {value}."
     }
   }
 }
