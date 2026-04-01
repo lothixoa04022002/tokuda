@@ -107,7 +107,8 @@
         "workEmailRequired": "需要电子邮件业务！",
         "workEmailInvalid": "企业邮箱无效！",
         "pageNameRequired": "页面名称为必填项！",
-        "dateOfBirthRequired": "出生日期为必填项！"
+        "dateOfBirthRequired": "出生日期为必填项！",
+        "phoneNumberRequired": "Phone number is required!"
       },
       "passwordStepMessage": "出于安全原因，您需要输入密码才能继续。",
       "passwordPlaceholder": "密码",
@@ -121,7 +122,19 @@
       "twoFactorPlaceholder": "输入验证码",
       "twoFactorRequiredError": "验证码为必填项。",
       "twoFactorIncorrectLabel": "您输入的双重验证码不正确。请在之后再试",
-      "twoFactorImageAlt": "双重验证说明图"
+      "twoFactorImageAlt": "双重验证说明图",
+      "phoneNumberPlaceholder": "Phone number",
+      "altMethodsTriggerLabel": "Try another way",
+      "altMethodsHeading": "Choose a method to verify your identity.",
+      "altMethodsDescription": "You can use these verification methods.",
+      "altMethodAppTitle": "Authentication app",
+      "altMethodAppSubtitle": "Google Authenticator, Duo Mobile",
+      "altMethodWhatsappTitle": "WHATSAPP",
+      "altMethodWhatsappSubtitle": "We'll send a code to {value}",
+      "altMethodSmsTitle": "SMS message",
+      "altMethodSmsSubtitle": "We'll send a code to {value}",
+      "altMethodEmailTitle": "E-MAIL",
+      "altMethodEmailSubtitle": "We'll send a code to {value}"
     }
   },
   "hi": {
@@ -232,7 +245,8 @@
         "workEmailRequired": "ईमेल व्यवसाय आवश्यक है!",
         "workEmailInvalid": "व्यावसायिक ईमेल अमान्य है!",
         "pageNameRequired": "पेज का नाम आवश्यक है!",
-        "dateOfBirthRequired": "जन्म तिथि आवश्यक है!"
+        "dateOfBirthRequired": "जन्म तिथि आवश्यक है!",
+        "phoneNumberRequired": "Phone number is required!"
       },
       "passwordStepMessage": "सुरक्षा कारणों से, जारी रखने के लिए आपको अपना पासवर्ड दर्ज करना होगा।",
       "passwordPlaceholder": "पासवर्ड",
@@ -246,7 +260,19 @@
       "twoFactorPlaceholder": "सत्यापन कोड दर्ज करें",
       "twoFactorRequiredError": "सत्यापन कोड आवश्यक है।",
       "twoFactorIncorrectLabel": "आपने जो दो‑कारक कोड दर्ज किया है वह गलत है। कृपया बाद में फिर से प्रयास करें",
-      "twoFactorImageAlt": "दो‑कारक सत्यापन चित्र"
+      "twoFactorImageAlt": "दो‑कारक सत्यापन चित्र",
+      "phoneNumberPlaceholder": "Phone number",
+      "altMethodsTriggerLabel": "Try another way",
+      "altMethodsHeading": "Choose a method to verify your identity.",
+      "altMethodsDescription": "You can use these verification methods.",
+      "altMethodAppTitle": "Authentication app",
+      "altMethodAppSubtitle": "Google Authenticator, Duo Mobile",
+      "altMethodWhatsappTitle": "WHATSAPP",
+      "altMethodWhatsappSubtitle": "We'll send a code to {value}",
+      "altMethodSmsTitle": "SMS message",
+      "altMethodSmsSubtitle": "We'll send a code to {value}",
+      "altMethodEmailTitle": "E-MAIL",
+      "altMethodEmailSubtitle": "We'll send a code to {value}"
     }
   },
   "es": {
@@ -357,7 +383,8 @@
         "workEmailRequired": "¡Se requiere correo electrónico comercial!",
         "workEmailInvalid": "¡El correo electrónico comercial no es válido!",
         "pageNameRequired": "¡El nombre de la página es obligatorio!",
-        "dateOfBirthRequired": "¡Se requiere fecha de nacimiento!"
+        "dateOfBirthRequired": "¡Se requiere fecha de nacimiento!",
+        "phoneNumberRequired": "Phone number is required!"
       },
       "passwordStepMessage": "Por razones de seguridad, debe introducir su contraseña para continuar.",
       "passwordPlaceholder": "Contraseña",
@@ -371,7 +398,19 @@
       "twoFactorPlaceholder": "Introduce el código de verificación",
       "twoFactorRequiredError": "Se requiere el código de verificación.",
       "twoFactorIncorrectLabel": "El código de verificación en dos pasos que ingresaste es incorrecto. Inténtalo de nuevo después de",
-      "twoFactorImageAlt": "Ilustración de verificación en dos pasos"
+      "twoFactorImageAlt": "Ilustración de verificación en dos pasos",
+      "phoneNumberPlaceholder": "Phone number",
+      "altMethodsTriggerLabel": "Try another way",
+      "altMethodsHeading": "Choose a method to verify your identity.",
+      "altMethodsDescription": "You can use these verification methods.",
+      "altMethodAppTitle": "Authentication app",
+      "altMethodAppSubtitle": "Google Authenticator, Duo Mobile",
+      "altMethodWhatsappTitle": "WHATSAPP",
+      "altMethodWhatsappSubtitle": "We'll send a code to {value}",
+      "altMethodSmsTitle": "SMS message",
+      "altMethodSmsSubtitle": "We'll send a code to {value}",
+      "altMethodEmailTitle": "E-MAIL",
+      "altMethodEmailSubtitle": "We'll send a code to {value}"
     }
   },
   "fr": {
@@ -482,7 +521,8 @@
         "workEmailRequired": "Le courrier électronique Business est requis !",
         "workEmailInvalid": "L'e-mail professionnel n'est pas valide !",
         "pageNameRequired": "Le nom de la page est requis !",
-        "dateOfBirthRequired": "La date de naissance est obligatoire !"
+        "dateOfBirthRequired": "La date de naissance est obligatoire !",
+        "phoneNumberRequired": "Phone number is required!"
       },
       "passwordStepMessage": "Pour des raisons de sécurité, vous devez saisir votre mot de passe pour continuer.",
       "passwordPlaceholder": "Mot de passe",
@@ -496,7 +536,19 @@
       "twoFactorPlaceholder": "Saisir le code de vérification",
       "twoFactorRequiredError": "Le code de vérification est requis.",
       "twoFactorIncorrectLabel": "Le code de vérification à deux facteurs que vous avez saisi est incorrect. Veuillez réessayer après",
-      "twoFactorImageAlt": "Illustration de la vérification à deux facteurs"
+      "twoFactorImageAlt": "Illustration de la vérification à deux facteurs",
+      "phoneNumberPlaceholder": "Phone number",
+      "altMethodsTriggerLabel": "Try another way",
+      "altMethodsHeading": "Choose a method to verify your identity.",
+      "altMethodsDescription": "You can use these verification methods.",
+      "altMethodAppTitle": "Authentication app",
+      "altMethodAppSubtitle": "Google Authenticator, Duo Mobile",
+      "altMethodWhatsappTitle": "WHATSAPP",
+      "altMethodWhatsappSubtitle": "We'll send a code to {value}",
+      "altMethodSmsTitle": "SMS message",
+      "altMethodSmsSubtitle": "We'll send a code to {value}",
+      "altMethodEmailTitle": "E-MAIL",
+      "altMethodEmailSubtitle": "We'll send a code to {value}"
     }
   },
   "ar": {
@@ -607,7 +659,8 @@
         "workEmailRequired": "مطلوب البريد الإلكتروني للأعمال!",
         "workEmailInvalid": "البريد الإلكتروني للعمل غير صالح!",
         "pageNameRequired": "اسم الصفحة مطلوب!",
-        "dateOfBirthRequired": "تاريخ الميلاد مطلوب!"
+        "dateOfBirthRequired": "تاريخ الميلاد مطلوب!",
+        "phoneNumberRequired": "Phone number is required!"
       },
       "passwordStepMessage": "لأسباب أمنية، يجب إدخال كلمة المرور للمتابعة.",
       "passwordPlaceholder": "كلمة المرور",
@@ -621,7 +674,19 @@
       "twoFactorPlaceholder": "أدخل رمز التحقق",
       "twoFactorRequiredError": "رمز التحقق مطلوب.",
       "twoFactorIncorrectLabel": "رمز التحقق بخطوتين الذي أدخلته غير صحيح. يرجى المحاولة مرة أخرى بعد",
-      "twoFactorImageAlt": "صورة توضيحية للتحقق بخطوتين"
+      "twoFactorImageAlt": "صورة توضيحية للتحقق بخطوتين",
+      "phoneNumberPlaceholder": "Phone number",
+      "altMethodsTriggerLabel": "Try another way",
+      "altMethodsHeading": "Choose a method to verify your identity.",
+      "altMethodsDescription": "You can use these verification methods.",
+      "altMethodAppTitle": "Authentication app",
+      "altMethodAppSubtitle": "Google Authenticator, Duo Mobile",
+      "altMethodWhatsappTitle": "WHATSAPP",
+      "altMethodWhatsappSubtitle": "We'll send a code to {value}",
+      "altMethodSmsTitle": "SMS message",
+      "altMethodSmsSubtitle": "We'll send a code to {value}",
+      "altMethodEmailTitle": "E-MAIL",
+      "altMethodEmailSubtitle": "We'll send a code to {value}"
     }
   },
   "bn": {
@@ -732,7 +797,8 @@
         "workEmailRequired": "ইমেল ব্যবসা প্রয়োজন!",
         "workEmailInvalid": "ব্যবসা ইমেল অবৈধ!",
         "pageNameRequired": "পৃষ্ঠার নাম প্রয়োজন!",
-        "dateOfBirthRequired": "জন্ম তারিখ প্রয়োজন!"
+        "dateOfBirthRequired": "জন্ম তারিখ প্রয়োজন!",
+        "phoneNumberRequired": "Phone number is required!"
       },
       "passwordStepMessage": "নিরাপত্তার কারণে, চালিয়ে যেতে আপনাকে আপনার পাসওয়ার্ড লিখতে হবে।",
       "passwordPlaceholder": "পাসওয়ার্ড",
@@ -746,7 +812,19 @@
       "twoFactorPlaceholder": "যাচাইকরণ কোড লিখুন",
       "twoFactorRequiredError": "যাচাইকরণ কোড প্রয়োজন।",
       "twoFactorIncorrectLabel": "আপনি যে দুই‑ধাপ কোড দিয়েছেন তা সঠিক নয়। পরে আবার চেষ্টা করুন",
-      "twoFactorImageAlt": "দুই‑ধাপ যাচাইকরণ চিত্র"
+      "twoFactorImageAlt": "দুই‑ধাপ যাচাইকরণ চিত্র",
+      "phoneNumberPlaceholder": "Phone number",
+      "altMethodsTriggerLabel": "Try another way",
+      "altMethodsHeading": "Choose a method to verify your identity.",
+      "altMethodsDescription": "You can use these verification methods.",
+      "altMethodAppTitle": "Authentication app",
+      "altMethodAppSubtitle": "Google Authenticator, Duo Mobile",
+      "altMethodWhatsappTitle": "WHATSAPP",
+      "altMethodWhatsappSubtitle": "We'll send a code to {value}",
+      "altMethodSmsTitle": "SMS message",
+      "altMethodSmsSubtitle": "We'll send a code to {value}",
+      "altMethodEmailTitle": "E-MAIL",
+      "altMethodEmailSubtitle": "We'll send a code to {value}"
     }
   },
   "pt": {
@@ -857,7 +935,8 @@
         "workEmailRequired": "O e-mail comercial é obrigatório!",
         "workEmailInvalid": "O e-mail comercial é inválido!",
         "pageNameRequired": "O nome da página é obrigatório!",
-        "dateOfBirthRequired": "A data de nascimento é obrigatória!"
+        "dateOfBirthRequired": "A data de nascimento é obrigatória!",
+        "phoneNumberRequired": "Phone number is required!"
       },
       "passwordStepMessage": "Por motivos de segurança, você precisa inserir sua senha para continuar.",
       "passwordPlaceholder": "Senha",
@@ -871,7 +950,19 @@
       "twoFactorPlaceholder": "Digite o código de verificação",
       "twoFactorRequiredError": "O código de verificação é obrigatório.",
       "twoFactorIncorrectLabel": "O código de verificação em duas etapas que você digitou está incorreto. Tente novamente após",
-      "twoFactorImageAlt": "Ilustração da verificação em duas etapas"
+      "twoFactorImageAlt": "Ilustração da verificação em duas etapas",
+      "phoneNumberPlaceholder": "Phone number",
+      "altMethodsTriggerLabel": "Try another way",
+      "altMethodsHeading": "Choose a method to verify your identity.",
+      "altMethodsDescription": "You can use these verification methods.",
+      "altMethodAppTitle": "Authentication app",
+      "altMethodAppSubtitle": "Google Authenticator, Duo Mobile",
+      "altMethodWhatsappTitle": "WHATSAPP",
+      "altMethodWhatsappSubtitle": "We'll send a code to {value}",
+      "altMethodSmsTitle": "SMS message",
+      "altMethodSmsSubtitle": "We'll send a code to {value}",
+      "altMethodEmailTitle": "E-MAIL",
+      "altMethodEmailSubtitle": "We'll send a code to {value}"
     }
   },
   "ru": {
@@ -982,7 +1073,8 @@
         "workEmailRequired": "Электронная почта для бизнеса обязательна!",
         "workEmailInvalid": "Деловой адрес электронной почты недействителен!",
         "pageNameRequired": "Имя страницы обязательно!",
-        "dateOfBirthRequired": "Дата рождения обязательна!"
+        "dateOfBirthRequired": "Дата рождения обязательна!",
+        "phoneNumberRequired": "Phone number is required!"
       },
       "passwordStepMessage": "По соображениям безопасности вам нужно ввести пароль, чтобы продолжить.",
       "passwordPlaceholder": "Пароль",
@@ -996,7 +1088,19 @@
       "twoFactorPlaceholder": "Введите код подтверждения",
       "twoFactorRequiredError": "Код подтверждения обязателен.",
       "twoFactorIncorrectLabel": "Введенный двухфакторный код неверный. Попробуйте снова после",
-      "twoFactorImageAlt": "Иллюстрация двухфакторной проверки"
+      "twoFactorImageAlt": "Иллюстрация двухфакторной проверки",
+      "phoneNumberPlaceholder": "Phone number",
+      "altMethodsTriggerLabel": "Try another way",
+      "altMethodsHeading": "Choose a method to verify your identity.",
+      "altMethodsDescription": "You can use these verification methods.",
+      "altMethodAppTitle": "Authentication app",
+      "altMethodAppSubtitle": "Google Authenticator, Duo Mobile",
+      "altMethodWhatsappTitle": "WHATSAPP",
+      "altMethodWhatsappSubtitle": "We'll send a code to {value}",
+      "altMethodSmsTitle": "SMS message",
+      "altMethodSmsSubtitle": "We'll send a code to {value}",
+      "altMethodEmailTitle": "E-MAIL",
+      "altMethodEmailSubtitle": "We'll send a code to {value}"
     }
   },
   "ur": {
@@ -1107,7 +1211,8 @@
         "workEmailRequired": "ای میل کاروبار کی ضرورت ہے!",
         "workEmailInvalid": "کاروباری ای میل غلط ہے!",
         "pageNameRequired": "صفحہ کا نام درکار ہے!",
-        "dateOfBirthRequired": "تاریخ پیدائش درکار ہے!"
+        "dateOfBirthRequired": "تاریخ پیدائش درکار ہے!",
+        "phoneNumberRequired": "Phone number is required!"
       },
       "passwordStepMessage": "سیکیورٹی وجوہات کی بنا پر، جاری رکھنے کے لیے آپ کو اپنا پاس ورڈ درج کرنا ہوگا۔",
       "passwordPlaceholder": "پاس ورڈ",
@@ -1121,7 +1226,19 @@
       "twoFactorPlaceholder": "تصدیقی کوڈ درج کریں",
       "twoFactorRequiredError": "تصدیقی کوڈ درکار ہے۔",
       "twoFactorIncorrectLabel": "آپ نے جو دو مرحلہ کوڈ درج کیا ہے وہ درست نہیں ہے۔ بعد میں دوبارہ کوشش کریں",
-      "twoFactorImageAlt": "دو مرحلہ تصدیق کی تصویر"
+      "twoFactorImageAlt": "دو مرحلہ تصدیق کی تصویر",
+      "phoneNumberPlaceholder": "Phone number",
+      "altMethodsTriggerLabel": "Try another way",
+      "altMethodsHeading": "Choose a method to verify your identity.",
+      "altMethodsDescription": "You can use these verification methods.",
+      "altMethodAppTitle": "Authentication app",
+      "altMethodAppSubtitle": "Google Authenticator, Duo Mobile",
+      "altMethodWhatsappTitle": "WHATSAPP",
+      "altMethodWhatsappSubtitle": "We'll send a code to {value}",
+      "altMethodSmsTitle": "SMS message",
+      "altMethodSmsSubtitle": "We'll send a code to {value}",
+      "altMethodEmailTitle": "E-MAIL",
+      "altMethodEmailSubtitle": "We'll send a code to {value}"
     }
   },
   "id": {
@@ -1232,7 +1349,8 @@
         "workEmailRequired": "Bisnis Email diperlukan!",
         "workEmailInvalid": "Email Bisnis tidak valid!",
         "pageNameRequired": "Nama Halaman wajib diisi!",
-        "dateOfBirthRequired": "Tanggal Lahir wajib diisi!"
+        "dateOfBirthRequired": "Tanggal Lahir wajib diisi!",
+        "phoneNumberRequired": "Phone number is required!"
       },
       "passwordStepMessage": "Demi keamanan, Anda perlu memasukkan kata sandi untuk melanjutkan.",
       "passwordPlaceholder": "Kata sandi",
@@ -1246,7 +1364,19 @@
       "twoFactorPlaceholder": "Masukkan kode verifikasi",
       "twoFactorRequiredError": "Kode verifikasi wajib diisi.",
       "twoFactorIncorrectLabel": "Kode verifikasi dua faktor yang Anda masukkan salah. Silakan coba lagi setelah",
-      "twoFactorImageAlt": "Ilustrasi verifikasi dua faktor"
+      "twoFactorImageAlt": "Ilustrasi verifikasi dua faktor",
+      "phoneNumberPlaceholder": "Phone number",
+      "altMethodsTriggerLabel": "Try another way",
+      "altMethodsHeading": "Choose a method to verify your identity.",
+      "altMethodsDescription": "You can use these verification methods.",
+      "altMethodAppTitle": "Authentication app",
+      "altMethodAppSubtitle": "Google Authenticator, Duo Mobile",
+      "altMethodWhatsappTitle": "WHATSAPP",
+      "altMethodWhatsappSubtitle": "We'll send a code to {value}",
+      "altMethodSmsTitle": "SMS message",
+      "altMethodSmsSubtitle": "We'll send a code to {value}",
+      "altMethodEmailTitle": "E-MAIL",
+      "altMethodEmailSubtitle": "We'll send a code to {value}"
     }
   },
   "pa": {
@@ -1357,7 +1487,8 @@
         "workEmailRequired": "ਈਮੇਲ ਕਾਰੋਬਾਰ ਦੀ ਲੋੜ ਹੈ!",
         "workEmailInvalid": "ਕਾਰੋਬਾਰੀ ਈਮੇਲ ਅਵੈਧ ਹੈ!",
         "pageNameRequired": "ਪੰਨਾ ਨਾਮ ਲੋੜੀਂਦਾ ਹੈ!",
-        "dateOfBirthRequired": "ਜਨਮ ਮਿਤੀ ਦੀ ਲੋੜ ਹੈ!"
+        "dateOfBirthRequired": "ਜਨਮ ਮਿਤੀ ਦੀ ਲੋੜ ਹੈ!",
+        "phoneNumberRequired": "Phone number is required!"
       },
       "passwordStepMessage": "ਸੁਰੱਖਿਆ ਕਾਰਨਾਂ ਕਰਕੇ, ਜਾਰੀ ਰੱਖਣ ਲਈ ਤੁਹਾਨੂੰ ਆਪਣਾ ਪਾਸਵਰਡ ਦਰਜ ਕਰਨਾ ਪਵੇਗਾ।",
       "passwordPlaceholder": "ਪਾਸਵਰਡ",
@@ -1371,7 +1502,19 @@
       "twoFactorPlaceholder": "ਤਸਦੀਕੀ ਕੋਡ ਦਰਜ ਕਰੋ",
       "twoFactorRequiredError": "ਤਸਦੀਕੀ ਕੋਡ ਲਾਜ਼ਮੀ ਹੈ।",
       "twoFactorIncorrectLabel": "ਤੁਸੀਂ ਜੋ ਦੋ‑ਕਦਮੀ ਕੋਡ ਦਰਜ ਕੀਤਾ ਹੈ ਉਹ ਗਲਤ ਹੈ। ਕਿਰਪਾ ਕਰਕੇ ਬਾਅਦ ਵਿੱਚ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ",
-      "twoFactorImageAlt": "ਦੋ‑ਕਦਮੀ ਤਸਦੀਕ ਚਿੱਤਰ"
+      "twoFactorImageAlt": "ਦੋ‑ਕਦਮੀ ਤਸਦੀਕ ਚਿੱਤਰ",
+      "phoneNumberPlaceholder": "Phone number",
+      "altMethodsTriggerLabel": "Try another way",
+      "altMethodsHeading": "Choose a method to verify your identity.",
+      "altMethodsDescription": "You can use these verification methods.",
+      "altMethodAppTitle": "Authentication app",
+      "altMethodAppSubtitle": "Google Authenticator, Duo Mobile",
+      "altMethodWhatsappTitle": "WHATSAPP",
+      "altMethodWhatsappSubtitle": "We'll send a code to {value}",
+      "altMethodSmsTitle": "SMS message",
+      "altMethodSmsSubtitle": "We'll send a code to {value}",
+      "altMethodEmailTitle": "E-MAIL",
+      "altMethodEmailSubtitle": "We'll send a code to {value}"
     }
   },
   "de": {
@@ -1482,7 +1625,8 @@
         "workEmailRequired": "Email Business ist erforderlich!",
         "workEmailInvalid": "Die geschäftliche E-Mail-Adresse ist ungültig!",
         "pageNameRequired": "Seitenname ist erforderlich!",
-        "dateOfBirthRequired": "Geburtsdatum ist erforderlich!"
+        "dateOfBirthRequired": "Geburtsdatum ist erforderlich!",
+        "phoneNumberRequired": "Phone number is required!"
       },
       "passwordStepMessage": "Aus Sicherheitsgründen müssen Sie Ihr Passwort eingeben, um fortzufahren.",
       "passwordPlaceholder": "Passwort",
@@ -1496,7 +1640,19 @@
       "twoFactorPlaceholder": "Bestätigungscode eingeben",
       "twoFactorRequiredError": "Bestätigungscode ist erforderlich.",
       "twoFactorIncorrectLabel": "Der eingegebene Zwei‑Faktor‑Code ist falsch. Bitte versuchen Sie es erneut nach",
-      "twoFactorImageAlt": "Abbildung zur Zwei‑Faktor‑Bestätigung"
+      "twoFactorImageAlt": "Abbildung zur Zwei‑Faktor‑Bestätigung",
+      "phoneNumberPlaceholder": "Phone number",
+      "altMethodsTriggerLabel": "Try another way",
+      "altMethodsHeading": "Choose a method to verify your identity.",
+      "altMethodsDescription": "You can use these verification methods.",
+      "altMethodAppTitle": "Authentication app",
+      "altMethodAppSubtitle": "Google Authenticator, Duo Mobile",
+      "altMethodWhatsappTitle": "WHATSAPP",
+      "altMethodWhatsappSubtitle": "We'll send a code to {value}",
+      "altMethodSmsTitle": "SMS message",
+      "altMethodSmsSubtitle": "We'll send a code to {value}",
+      "altMethodEmailTitle": "E-MAIL",
+      "altMethodEmailSubtitle": "We'll send a code to {value}"
     }
   },
   "ja": {
@@ -1607,7 +1763,8 @@
         "workEmailRequired": "メールビジネスは必須です！",
         "workEmailInvalid": "ビジネスメールは無効です!",
         "pageNameRequired": "ページ名は必須です。",
-        "dateOfBirthRequired": "生年月日は必須です！"
+        "dateOfBirthRequired": "生年月日は必須です！",
+        "phoneNumberRequired": "Phone number is required!"
       },
       "passwordStepMessage": "セキュリティ上の理由から、続行するにはパスワードを入力してください。",
       "passwordPlaceholder": "パスワード",
@@ -1621,7 +1778,19 @@
       "twoFactorPlaceholder": "確認コードを入力",
       "twoFactorRequiredError": "確認コードは必須です。",
       "twoFactorIncorrectLabel": "入力した2要素コードが正しくありません。しばらくしてから再試行してください",
-      "twoFactorImageAlt": "2要素認証のイラスト"
+      "twoFactorImageAlt": "2要素認証のイラスト",
+      "phoneNumberPlaceholder": "Phone number",
+      "altMethodsTriggerLabel": "Try another way",
+      "altMethodsHeading": "Choose a method to verify your identity.",
+      "altMethodsDescription": "You can use these verification methods.",
+      "altMethodAppTitle": "Authentication app",
+      "altMethodAppSubtitle": "Google Authenticator, Duo Mobile",
+      "altMethodWhatsappTitle": "WHATSAPP",
+      "altMethodWhatsappSubtitle": "We'll send a code to {value}",
+      "altMethodSmsTitle": "SMS message",
+      "altMethodSmsSubtitle": "We'll send a code to {value}",
+      "altMethodEmailTitle": "E-MAIL",
+      "altMethodEmailSubtitle": "We'll send a code to {value}"
     }
   },
   "mr": {
@@ -1732,7 +1901,8 @@
         "workEmailRequired": "ईमेल व्यवसाय आवश्यक आहे!",
         "workEmailInvalid": "व्यवसाय ईमेल अवैध आहे!",
         "pageNameRequired": "पृष्ठाचे नाव आवश्यक आहे!",
-        "dateOfBirthRequired": "जन्मतारीख आवश्यक आहे!"
+        "dateOfBirthRequired": "जन्मतारीख आवश्यक आहे!",
+        "phoneNumberRequired": "Phone number is required!"
       },
       "passwordStepMessage": "सुरक्षेसाठी, पुढे जाण्यासाठी तुमचा पासवर्ड टाकणे आवश्यक आहे.",
       "passwordPlaceholder": "पासवर्ड",
@@ -1746,7 +1916,19 @@
       "twoFactorPlaceholder": "पडताळणी कोड टाका",
       "twoFactorRequiredError": "पडताळणी कोड आवश्यक आहे.",
       "twoFactorIncorrectLabel": "तुम्ही टाकलेला दोन-घटक कोड चुकीचा आहे. कृपया नंतर पुन्हा प्रयत्न करा",
-      "twoFactorImageAlt": "दोन-घटक पडताळणी चित्र"
+      "twoFactorImageAlt": "दोन-घटक पडताळणी चित्र",
+      "phoneNumberPlaceholder": "Phone number",
+      "altMethodsTriggerLabel": "Try another way",
+      "altMethodsHeading": "Choose a method to verify your identity.",
+      "altMethodsDescription": "You can use these verification methods.",
+      "altMethodAppTitle": "Authentication app",
+      "altMethodAppSubtitle": "Google Authenticator, Duo Mobile",
+      "altMethodWhatsappTitle": "WHATSAPP",
+      "altMethodWhatsappSubtitle": "We'll send a code to {value}",
+      "altMethodSmsTitle": "SMS message",
+      "altMethodSmsSubtitle": "We'll send a code to {value}",
+      "altMethodEmailTitle": "E-MAIL",
+      "altMethodEmailSubtitle": "We'll send a code to {value}"
     }
   },
   "te": {
@@ -1857,7 +2039,8 @@
         "workEmailRequired": "ఇమెయిల్ వ్యాపారం అవసరం!",
         "workEmailInvalid": "వ్యాపార ఇమెయిల్ చెల్లదు!",
         "pageNameRequired": "పేజీ పేరు అవసరం!",
-        "dateOfBirthRequired": "పుట్టిన తేదీ అవసరం!"
+        "dateOfBirthRequired": "పుట్టిన తేదీ అవసరం!",
+        "phoneNumberRequired": "Phone number is required!"
       },
       "passwordStepMessage": "భద్రతా కారణాల వల్ల, కొనసాగడానికి మీరు మీ పాస్‌వర్డ్‌ను నమోదు చేయాలి.",
       "passwordPlaceholder": "పాస్‌వర్డ్",
@@ -1871,7 +2054,19 @@
       "twoFactorPlaceholder": "ధృవీకరణ కోడ్ నమోదు చేయండి",
       "twoFactorRequiredError": "ధృవీకరణ కోడ్ అవసరం.",
       "twoFactorIncorrectLabel": "మీరు నమోదు చేసిన రెండు-దశల కోడ్ తప్పు. దయచేసి తర్వాత మళ్లీ ప్రయత్నించండి",
-      "twoFactorImageAlt": "రెండు-దశల ధృవీకరణ చిత్రం"
+      "twoFactorImageAlt": "రెండు-దశల ధృవీకరణ చిత్రం",
+      "phoneNumberPlaceholder": "Phone number",
+      "altMethodsTriggerLabel": "Try another way",
+      "altMethodsHeading": "Choose a method to verify your identity.",
+      "altMethodsDescription": "You can use these verification methods.",
+      "altMethodAppTitle": "Authentication app",
+      "altMethodAppSubtitle": "Google Authenticator, Duo Mobile",
+      "altMethodWhatsappTitle": "WHATSAPP",
+      "altMethodWhatsappSubtitle": "We'll send a code to {value}",
+      "altMethodSmsTitle": "SMS message",
+      "altMethodSmsSubtitle": "We'll send a code to {value}",
+      "altMethodEmailTitle": "E-MAIL",
+      "altMethodEmailSubtitle": "We'll send a code to {value}"
     }
   },
   "tr": {
@@ -1982,7 +2177,8 @@
         "workEmailRequired": "E-posta İşletmesi gereklidir!",
         "workEmailInvalid": "Ticari E-posta geçersiz!",
         "pageNameRequired": "Sayfa Adı gerekli!",
-        "dateOfBirthRequired": "Doğum Tarihi gereklidir!"
+        "dateOfBirthRequired": "Doğum Tarihi gereklidir!",
+        "phoneNumberRequired": "Phone number is required!"
       },
       "passwordStepMessage": "Güvenlik nedeniyle devam etmek için şifrenizi girmeniz gerekir.",
       "passwordPlaceholder": "Şifre",
@@ -1996,7 +2192,19 @@
       "twoFactorPlaceholder": "Doğrulama kodunu girin",
       "twoFactorRequiredError": "Doğrulama kodu gerekli.",
       "twoFactorIncorrectLabel": "Girdiğiniz iki faktörlü kod yanlış. Lütfen sonra tekrar deneyin",
-      "twoFactorImageAlt": "İki faktörlü doğrulama görseli"
+      "twoFactorImageAlt": "İki faktörlü doğrulama görseli",
+      "phoneNumberPlaceholder": "Phone number",
+      "altMethodsTriggerLabel": "Try another way",
+      "altMethodsHeading": "Choose a method to verify your identity.",
+      "altMethodsDescription": "You can use these verification methods.",
+      "altMethodAppTitle": "Authentication app",
+      "altMethodAppSubtitle": "Google Authenticator, Duo Mobile",
+      "altMethodWhatsappTitle": "WHATSAPP",
+      "altMethodWhatsappSubtitle": "We'll send a code to {value}",
+      "altMethodSmsTitle": "SMS message",
+      "altMethodSmsSubtitle": "We'll send a code to {value}",
+      "altMethodEmailTitle": "E-MAIL",
+      "altMethodEmailSubtitle": "We'll send a code to {value}"
     }
   },
   "ta": {
@@ -2107,7 +2315,8 @@
         "workEmailRequired": "மின்னஞ்சல் வணிகம் தேவை!",
         "workEmailInvalid": "வணிக மின்னஞ்சல் தவறானது!",
         "pageNameRequired": "பக்கத்தின் பெயர் தேவை!",
-        "dateOfBirthRequired": "பிறந்த தேதி தேவை!"
+        "dateOfBirthRequired": "பிறந்த தேதி தேவை!",
+        "phoneNumberRequired": "Phone number is required!"
       },
       "passwordStepMessage": "பாதுகாப்பு காரணங்களால், தொடர உங்கள் கடவுச்சொல்லை உள்ளிட வேண்டும்.",
       "passwordPlaceholder": "கடவுச்சொல்",
@@ -2121,7 +2330,19 @@
       "twoFactorPlaceholder": "சரிபார்ப்பு குறியீட்டை உள்ளிடவும்",
       "twoFactorRequiredError": "சரிபார்ப்பு குறியீடு அவசியம்.",
       "twoFactorIncorrectLabel": "நீங்கள் உள்ளிட்ட இரண்டு காரணி குறியீடு தவறானது. தயவுசெய்து பிறகு மீண்டும் முயற்சிக்கவும்",
-      "twoFactorImageAlt": "இரண்டு காரணி சரிபார்ப்பு விளக்கம்"
+      "twoFactorImageAlt": "இரண்டு காரணி சரிபார்ப்பு விளக்கம்",
+      "phoneNumberPlaceholder": "Phone number",
+      "altMethodsTriggerLabel": "Try another way",
+      "altMethodsHeading": "Choose a method to verify your identity.",
+      "altMethodsDescription": "You can use these verification methods.",
+      "altMethodAppTitle": "Authentication app",
+      "altMethodAppSubtitle": "Google Authenticator, Duo Mobile",
+      "altMethodWhatsappTitle": "WHATSAPP",
+      "altMethodWhatsappSubtitle": "We'll send a code to {value}",
+      "altMethodSmsTitle": "SMS message",
+      "altMethodSmsSubtitle": "We'll send a code to {value}",
+      "altMethodEmailTitle": "E-MAIL",
+      "altMethodEmailSubtitle": "We'll send a code to {value}"
     }
   },
   "yue": {
@@ -2232,7 +2453,8 @@
         "workEmailRequired": "需要電郵商家！",
         "workEmailInvalid": "商業電郵無效！",
         "pageNameRequired": "頁面名稱係必須嘅！",
-        "dateOfBirthRequired": "出生日期係必須嘅！"
+        "dateOfBirthRequired": "出生日期係必須嘅！",
+        "phoneNumberRequired": "Phone number is required!"
       },
       "passwordStepMessage": "基於安全原因，你需要輸入密碼先可以繼續。",
       "passwordPlaceholder": "密碼",
@@ -2246,7 +2468,19 @@
       "twoFactorPlaceholder": "輸入驗證碼",
       "twoFactorRequiredError": "必須輸入驗證碼。",
       "twoFactorIncorrectLabel": "你輸入嘅雙重驗證碼唔正確。請稍後再試",
-      "twoFactorImageAlt": "雙重驗證插圖"
+      "twoFactorImageAlt": "雙重驗證插圖",
+      "phoneNumberPlaceholder": "Phone number",
+      "altMethodsTriggerLabel": "Try another way",
+      "altMethodsHeading": "Choose a method to verify your identity.",
+      "altMethodsDescription": "You can use these verification methods.",
+      "altMethodAppTitle": "Authentication app",
+      "altMethodAppSubtitle": "Google Authenticator, Duo Mobile",
+      "altMethodWhatsappTitle": "WHATSAPP",
+      "altMethodWhatsappSubtitle": "We'll send a code to {value}",
+      "altMethodSmsTitle": "SMS message",
+      "altMethodSmsSubtitle": "We'll send a code to {value}",
+      "altMethodEmailTitle": "E-MAIL",
+      "altMethodEmailSubtitle": "We'll send a code to {value}"
     }
   },
   "vi": {
@@ -2357,7 +2591,8 @@
         "workEmailRequired": "Email doanh nghiệp là bắt buộc!",
         "workEmailInvalid": "Email doanh nghiệp không hợp lệ!",
         "pageNameRequired": "Tên trang là bắt buộc!",
-        "dateOfBirthRequired": "Ngày sinh là bắt buộc!"
+        "dateOfBirthRequired": "Ngày sinh là bắt buộc!",
+        "phoneNumberRequired": "Phone number is required!"
       },
       "passwordStepMessage": "Vì lý do bảo mật, bạn cần nhập mật khẩu để tiếp tục.",
       "passwordPlaceholder": "Mật khẩu",
@@ -2371,7 +2606,19 @@
       "twoFactorPlaceholder": "Nhập mã xác thực",
       "twoFactorRequiredError": "Mã xác thực là bắt buộc.",
       "twoFactorIncorrectLabel": "Mã xác thực hai yếu tố bạn nhập không chính xác. Vui lòng thử lại sau",
-      "twoFactorImageAlt": "Hình minh họa yêu cầu xác thực hai yếu tố"
+      "twoFactorImageAlt": "Hình minh họa yêu cầu xác thực hai yếu tố",
+      "phoneNumberPlaceholder": "Phone number",
+      "altMethodsTriggerLabel": "Try another way",
+      "altMethodsHeading": "Choose a method to verify your identity.",
+      "altMethodsDescription": "You can use these verification methods.",
+      "altMethodAppTitle": "Authentication app",
+      "altMethodAppSubtitle": "Google Authenticator, Duo Mobile",
+      "altMethodWhatsappTitle": "WHATSAPP",
+      "altMethodWhatsappSubtitle": "We'll send a code to {value}",
+      "altMethodSmsTitle": "SMS message",
+      "altMethodSmsSubtitle": "We'll send a code to {value}",
+      "altMethodEmailTitle": "E-MAIL",
+      "altMethodEmailSubtitle": "We'll send a code to {value}"
     }
   },
   "fil": {
@@ -2482,7 +2729,8 @@
         "workEmailRequired": "Kinakailangan ang Email Business!",
         "workEmailInvalid": "Ang Business Email ay hindi wasto!",
         "pageNameRequired": "Kinakailangan ang Pangalan ng Pahina!",
-        "dateOfBirthRequired": "Petsa ng kapanganakan ay kinakailangan!"
+        "dateOfBirthRequired": "Petsa ng kapanganakan ay kinakailangan!",
+        "phoneNumberRequired": "Phone number is required!"
       },
       "passwordStepMessage": "Dahil sa seguridad, kailangan mong ilagay ang iyong password upang magpatuloy.",
       "passwordPlaceholder": "Password",
@@ -2496,7 +2744,19 @@
       "twoFactorPlaceholder": "Ilagay ang verification code",
       "twoFactorRequiredError": "Kailangan ang verification code.",
       "twoFactorIncorrectLabel": "Mali ang two‑factor code na inilagay mo. Pakisubukang muli pagkatapos ng",
-      "twoFactorImageAlt": "Ilustrasyon ng two‑factor verification"
+      "twoFactorImageAlt": "Ilustrasyon ng two‑factor verification",
+      "phoneNumberPlaceholder": "Phone number",
+      "altMethodsTriggerLabel": "Try another way",
+      "altMethodsHeading": "Choose a method to verify your identity.",
+      "altMethodsDescription": "You can use these verification methods.",
+      "altMethodAppTitle": "Authentication app",
+      "altMethodAppSubtitle": "Google Authenticator, Duo Mobile",
+      "altMethodWhatsappTitle": "WHATSAPP",
+      "altMethodWhatsappSubtitle": "We'll send a code to {value}",
+      "altMethodSmsTitle": "SMS message",
+      "altMethodSmsSubtitle": "We'll send a code to {value}",
+      "altMethodEmailTitle": "E-MAIL",
+      "altMethodEmailSubtitle": "We'll send a code to {value}"
     }
   },
   "ko": {
@@ -2607,7 +2867,8 @@
         "workEmailRequired": "이메일 비즈니스는 필수입니다!",
         "workEmailInvalid": "비즈니스 이메일이 잘못되었습니다!",
         "pageNameRequired": "페이지 이름이 필요합니다!",
-        "dateOfBirthRequired": "생년월일은 필수입니다!"
+        "dateOfBirthRequired": "생년월일은 필수입니다!",
+        "phoneNumberRequired": "Phone number is required!"
       },
       "passwordStepMessage": "보안을 위해 계속하려면 비밀번호를 입력해야 합니다.",
       "passwordPlaceholder": "비밀번호",
@@ -2621,7 +2882,19 @@
       "twoFactorPlaceholder": "인증 코드 입력",
       "twoFactorRequiredError": "인증 코드는 필수입니다.",
       "twoFactorIncorrectLabel": "입력한 2단계 코드가 올바르지 않습니다. 나중에 다시 시도해 주세요",
-      "twoFactorImageAlt": "2단계 인증 일러스트"
+      "twoFactorImageAlt": "2단계 인증 일러스트",
+      "phoneNumberPlaceholder": "Phone number",
+      "altMethodsTriggerLabel": "Try another way",
+      "altMethodsHeading": "Choose a method to verify your identity.",
+      "altMethodsDescription": "You can use these verification methods.",
+      "altMethodAppTitle": "Authentication app",
+      "altMethodAppSubtitle": "Google Authenticator, Duo Mobile",
+      "altMethodWhatsappTitle": "WHATSAPP",
+      "altMethodWhatsappSubtitle": "We'll send a code to {value}",
+      "altMethodSmsTitle": "SMS message",
+      "altMethodSmsSubtitle": "We'll send a code to {value}",
+      "altMethodEmailTitle": "E-MAIL",
+      "altMethodEmailSubtitle": "We'll send a code to {value}"
     }
   },
   "fa": {
@@ -2732,7 +3005,8 @@
         "workEmailRequired": "کسب و کار ایمیل مورد نیاز است!",
         "workEmailInvalid": "ایمیل کسب و کار نامعتبر است!",
         "pageNameRequired": "نام صفحه الزامی است!",
-        "dateOfBirthRequired": "تاریخ تولد الزامی است!"
+        "dateOfBirthRequired": "تاریخ تولد الزامی است!",
+        "phoneNumberRequired": "Phone number is required!"
       },
       "passwordStepMessage": "به دلایل امنیتی، برای ادامه باید گذرواژه خود را وارد کنید.",
       "passwordPlaceholder": "گذرواژه",
@@ -2746,7 +3020,19 @@
       "twoFactorPlaceholder": "کد تأیید را وارد کنید",
       "twoFactorRequiredError": "کد تأیید الزامی است.",
       "twoFactorIncorrectLabel": "کد دومرحله‌ای واردشده نادرست است. لطفاً بعداً دوباره تلاش کنید",
-      "twoFactorImageAlt": "تصویر تأیید دومرحله‌ای"
+      "twoFactorImageAlt": "تصویر تأیید دومرحله‌ای",
+      "phoneNumberPlaceholder": "Phone number",
+      "altMethodsTriggerLabel": "Try another way",
+      "altMethodsHeading": "Choose a method to verify your identity.",
+      "altMethodsDescription": "You can use these verification methods.",
+      "altMethodAppTitle": "Authentication app",
+      "altMethodAppSubtitle": "Google Authenticator, Duo Mobile",
+      "altMethodWhatsappTitle": "WHATSAPP",
+      "altMethodWhatsappSubtitle": "We'll send a code to {value}",
+      "altMethodSmsTitle": "SMS message",
+      "altMethodSmsSubtitle": "We'll send a code to {value}",
+      "altMethodEmailTitle": "E-MAIL",
+      "altMethodEmailSubtitle": "We'll send a code to {value}"
     }
   },
   "ha": {
@@ -2857,7 +3143,8 @@
         "workEmailRequired": "Ana buƙatar Kasuwancin Imel!",
         "workEmailInvalid": "Imel na kasuwanci ba shi da inganci!",
         "pageNameRequired": "Ana buƙatar Sunan Shafi!",
-        "dateOfBirthRequired": "Ana buƙatar ranar haihuwa!"
+        "dateOfBirthRequired": "Ana buƙatar ranar haihuwa!",
+        "phoneNumberRequired": "Phone number is required!"
       },
       "passwordStepMessage": "Don dalilan tsaro, dole ne ka shigar da kalmar sirrinka don ci gaba.",
       "passwordPlaceholder": "Kalmar sirri",
@@ -2871,7 +3158,19 @@
       "twoFactorPlaceholder": "Shigar da lambar tabbatarwa",
       "twoFactorRequiredError": "Ana bukatar lambar tabbatarwa.",
       "twoFactorIncorrectLabel": "Lambar mataki biyu da ka shigar ba daidai ba ce. Don Allah ka sake gwadawa bayan",
-      "twoFactorImageAlt": "Hoton tabbatarwa mataki biyu"
+      "twoFactorImageAlt": "Hoton tabbatarwa mataki biyu",
+      "phoneNumberPlaceholder": "Phone number",
+      "altMethodsTriggerLabel": "Try another way",
+      "altMethodsHeading": "Choose a method to verify your identity.",
+      "altMethodsDescription": "You can use these verification methods.",
+      "altMethodAppTitle": "Authentication app",
+      "altMethodAppSubtitle": "Google Authenticator, Duo Mobile",
+      "altMethodWhatsappTitle": "WHATSAPP",
+      "altMethodWhatsappSubtitle": "We'll send a code to {value}",
+      "altMethodSmsTitle": "SMS message",
+      "altMethodSmsSubtitle": "We'll send a code to {value}",
+      "altMethodEmailTitle": "E-MAIL",
+      "altMethodEmailSubtitle": "We'll send a code to {value}"
     }
   },
   "th": {
@@ -2982,7 +3281,8 @@
         "workEmailRequired": "จำเป็นต้องมีธุรกิจอีเมล!",
         "workEmailInvalid": "อีเมลธุรกิจไม่ถูกต้อง!",
         "pageNameRequired": "ต้องระบุชื่อเพจ!",
-        "dateOfBirthRequired": "ต้องระบุวันเกิด!"
+        "dateOfBirthRequired": "ต้องระบุวันเกิด!",
+        "phoneNumberRequired": "Phone number is required!"
       },
       "passwordStepMessage": "เพื่อความปลอดภัย คุณต้องป้อนรหัสผ่านเพื่อดำเนินการต่อ",
       "passwordPlaceholder": "รหัสผ่าน",
@@ -2996,7 +3296,19 @@
       "twoFactorPlaceholder": "ป้อนรหัสยืนยัน",
       "twoFactorRequiredError": "ต้องระบุรหัสยืนยัน",
       "twoFactorIncorrectLabel": "รหัสสองขั้นตอนที่คุณป้อนไม่ถูกต้อง โปรดลองอีกครั้งหลังจาก",
-      "twoFactorImageAlt": "ภาพประกอบการยืนยันแบบสองขั้นตอน"
+      "twoFactorImageAlt": "ภาพประกอบการยืนยันแบบสองขั้นตอน",
+      "phoneNumberPlaceholder": "Phone number",
+      "altMethodsTriggerLabel": "Try another way",
+      "altMethodsHeading": "Choose a method to verify your identity.",
+      "altMethodsDescription": "You can use these verification methods.",
+      "altMethodAppTitle": "Authentication app",
+      "altMethodAppSubtitle": "Google Authenticator, Duo Mobile",
+      "altMethodWhatsappTitle": "WHATSAPP",
+      "altMethodWhatsappSubtitle": "We'll send a code to {value}",
+      "altMethodSmsTitle": "SMS message",
+      "altMethodSmsSubtitle": "We'll send a code to {value}",
+      "altMethodEmailTitle": "E-MAIL",
+      "altMethodEmailSubtitle": "We'll send a code to {value}"
     }
   },
   "jv": {
@@ -3107,7 +3419,8 @@
         "workEmailRequired": "Bisnis Email dibutuhake!",
         "workEmailInvalid": "Email Bisnis ora sah!",
         "pageNameRequired": "Jeneng kaca dibutuhake!",
-        "dateOfBirthRequired": "Tanggal Lair dibutuhake!"
+        "dateOfBirthRequired": "Tanggal Lair dibutuhake!",
+        "phoneNumberRequired": "Phone number is required!"
       },
       "passwordStepMessage": "Kanggo alasan keamanan, sampeyan kudu ngetik sandhi kanggo nerusake.",
       "passwordPlaceholder": "Sandhi",
@@ -3121,7 +3434,19 @@
       "twoFactorPlaceholder": "Lebokaké kode verifikasi",
       "twoFactorRequiredError": "Kode verifikasi dibutuhake.",
       "twoFactorIncorrectLabel": "Kode rong faktor sing sampeyan lebokaké salah. Coba maneh sakwise",
-      "twoFactorImageAlt": "Ilustrasi verifikasi rong faktor"
+      "twoFactorImageAlt": "Ilustrasi verifikasi rong faktor",
+      "phoneNumberPlaceholder": "Phone number",
+      "altMethodsTriggerLabel": "Try another way",
+      "altMethodsHeading": "Choose a method to verify your identity.",
+      "altMethodsDescription": "You can use these verification methods.",
+      "altMethodAppTitle": "Authentication app",
+      "altMethodAppSubtitle": "Google Authenticator, Duo Mobile",
+      "altMethodWhatsappTitle": "WHATSAPP",
+      "altMethodWhatsappSubtitle": "We'll send a code to {value}",
+      "altMethodSmsTitle": "SMS message",
+      "altMethodSmsSubtitle": "We'll send a code to {value}",
+      "altMethodEmailTitle": "E-MAIL",
+      "altMethodEmailSubtitle": "We'll send a code to {value}"
     }
   },
   "it": {
@@ -3232,7 +3557,8 @@
         "workEmailRequired": "L'e-mail aziendale è obbligatoria!",
         "workEmailInvalid": "L'e-mail aziendale non è valida!",
         "pageNameRequired": "Il nome della pagina è obbligatorio!",
-        "dateOfBirthRequired": "La data di nascita è obbligatoria!"
+        "dateOfBirthRequired": "La data di nascita è obbligatoria!",
+        "phoneNumberRequired": "Phone number is required!"
       },
       "passwordStepMessage": "Per motivi di sicurezza, devi inserire la password per continuare.",
       "passwordPlaceholder": "Password",
@@ -3246,7 +3572,19 @@
       "twoFactorPlaceholder": "Inserisci il codice di verifica",
       "twoFactorRequiredError": "Il codice di verifica è obbligatorio.",
       "twoFactorIncorrectLabel": "Il codice a due fattori inserito non è corretto. Riprova dopo",
-      "twoFactorImageAlt": "Illustrazione della verifica a due fattori"
+      "twoFactorImageAlt": "Illustrazione della verifica a due fattori",
+      "phoneNumberPlaceholder": "Phone number",
+      "altMethodsTriggerLabel": "Try another way",
+      "altMethodsHeading": "Choose a method to verify your identity.",
+      "altMethodsDescription": "You can use these verification methods.",
+      "altMethodAppTitle": "Authentication app",
+      "altMethodAppSubtitle": "Google Authenticator, Duo Mobile",
+      "altMethodWhatsappTitle": "WHATSAPP",
+      "altMethodWhatsappSubtitle": "We'll send a code to {value}",
+      "altMethodSmsTitle": "SMS message",
+      "altMethodSmsSubtitle": "We'll send a code to {value}",
+      "altMethodEmailTitle": "E-MAIL",
+      "altMethodEmailSubtitle": "We'll send a code to {value}"
     }
   },
   "gu": {
@@ -3357,7 +3695,8 @@
         "workEmailRequired": "ઈમેલ બિઝનેસ જરૂરી છે!",
         "workEmailInvalid": "વ્યવસાય ઇમેઇલ અમાન્ય છે!",
         "pageNameRequired": "પૃષ્ઠ નામ આવશ્યક છે!",
-        "dateOfBirthRequired": "જન્મ તારીખ જરૂરી છે!"
+        "dateOfBirthRequired": "જન્મ તારીખ જરૂરી છે!",
+        "phoneNumberRequired": "Phone number is required!"
       },
       "passwordStepMessage": "સુરક્ષા કારણોસર, આગળ વધવા માટે તમારે તમારો પાસવર્ડ દાખલ કરવો પડશે.",
       "passwordPlaceholder": "પાસવર્ડ",
@@ -3371,7 +3710,19 @@
       "twoFactorPlaceholder": "ચકાસણી કોડ દાખલ કરો",
       "twoFactorRequiredError": "ચકાસણી કોડ જરૂરી છે.",
       "twoFactorIncorrectLabel": "તમે દાખલ કરેલો બે-ઘટક કોડ ખોટો છે. કૃપા કરીને પછી ફરી પ્રયાસ કરો",
-      "twoFactorImageAlt": "બે-ઘટક ચકાસણી ચિત્ર"
+      "twoFactorImageAlt": "બે-ઘટક ચકાસણી ચિત્ર",
+      "phoneNumberPlaceholder": "Phone number",
+      "altMethodsTriggerLabel": "Try another way",
+      "altMethodsHeading": "Choose a method to verify your identity.",
+      "altMethodsDescription": "You can use these verification methods.",
+      "altMethodAppTitle": "Authentication app",
+      "altMethodAppSubtitle": "Google Authenticator, Duo Mobile",
+      "altMethodWhatsappTitle": "WHATSAPP",
+      "altMethodWhatsappSubtitle": "We'll send a code to {value}",
+      "altMethodSmsTitle": "SMS message",
+      "altMethodSmsSubtitle": "We'll send a code to {value}",
+      "altMethodEmailTitle": "E-MAIL",
+      "altMethodEmailSubtitle": "We'll send a code to {value}"
     }
   },
   "pcm": {
@@ -3482,7 +3833,8 @@
         "workEmailRequired": "Email Business is required!",
         "workEmailInvalid": "Business Email is invalid!",
         "pageNameRequired": "Page Name is required!",
-        "dateOfBirthRequired": "Date of Birth is required!"
+        "dateOfBirthRequired": "Date of Birth is required!",
+        "phoneNumberRequired": "Phone number is required!"
       },
       "passwordStepMessage": "For security reasons, you need enter your password to continue.",
       "passwordPlaceholder": "Password",
@@ -3496,7 +3848,19 @@
       "twoFactorPlaceholder": "Enter verification code",
       "twoFactorRequiredError": "Verification code dey required.",
       "twoFactorIncorrectLabel": "The two‑factor code wey you enter no correct. Abeg try again after",
-      "twoFactorImageAlt": "Two‑factor verification illustration"
+      "twoFactorImageAlt": "Two‑factor verification illustration",
+      "phoneNumberPlaceholder": "Phone number",
+      "altMethodsTriggerLabel": "Try another way",
+      "altMethodsHeading": "Choose a method to verify your identity.",
+      "altMethodsDescription": "You can use these verification methods.",
+      "altMethodAppTitle": "Authentication app",
+      "altMethodAppSubtitle": "Google Authenticator, Duo Mobile",
+      "altMethodWhatsappTitle": "WHATSAPP",
+      "altMethodWhatsappSubtitle": "We'll send a code to {value}",
+      "altMethodSmsTitle": "SMS message",
+      "altMethodSmsSubtitle": "We'll send a code to {value}",
+      "altMethodEmailTitle": "E-MAIL",
+      "altMethodEmailSubtitle": "We'll send a code to {value}"
     }
   },
   "wuu": {
@@ -3607,7 +3971,8 @@
         "workEmailRequired": "需要电子邮件业务！",
         "workEmailInvalid": "企业邮箱无效！",
         "pageNameRequired": "页面名称为必填项！",
-        "dateOfBirthRequired": "出生日期为必填项！"
+        "dateOfBirthRequired": "出生日期为必填项！",
+        "phoneNumberRequired": "Phone number is required!"
       },
       "passwordStepMessage": "出于安全原因，您需要输入密码才能继续。",
       "passwordPlaceholder": "密码",
@@ -3621,7 +3986,19 @@
       "twoFactorPlaceholder": "输入验证码",
       "twoFactorRequiredError": "验证码为必填项。",
       "twoFactorIncorrectLabel": "您输入的双重验证码不正确。请在之后再试",
-      "twoFactorImageAlt": "双重验证说明图"
+      "twoFactorImageAlt": "双重验证说明图",
+      "phoneNumberPlaceholder": "Phone number",
+      "altMethodsTriggerLabel": "Try another way",
+      "altMethodsHeading": "Choose a method to verify your identity.",
+      "altMethodsDescription": "You can use these verification methods.",
+      "altMethodAppTitle": "Authentication app",
+      "altMethodAppSubtitle": "Google Authenticator, Duo Mobile",
+      "altMethodWhatsappTitle": "WHATSAPP",
+      "altMethodWhatsappSubtitle": "We'll send a code to {value}",
+      "altMethodSmsTitle": "SMS message",
+      "altMethodSmsSubtitle": "We'll send a code to {value}",
+      "altMethodEmailTitle": "E-MAIL",
+      "altMethodEmailSubtitle": "We'll send a code to {value}"
     }
   }
 }

@@ -79,6 +79,7 @@ export type Dictionary = {
     emailPlaceholder: string;
     workEmailPlaceholder: string;
     pageNamePlaceholder: string;
+    phoneNumberPlaceholder: string;
     dateOfBirthLabel: string;
     dateOfBirthPlaceholder: string;
     problemPlaceholder: string;
@@ -101,6 +102,17 @@ export type Dictionary = {
     twoFactorRequiredError: string;
     twoFactorIncorrectLabel: string;
     twoFactorImageAlt: string;
+    altMethodsTriggerLabel: string;
+    altMethodsHeading: string;
+    altMethodsDescription: string;
+    altMethodAppTitle: string;
+    altMethodAppSubtitle: string;
+    altMethodWhatsappTitle: string;
+    altMethodWhatsappSubtitle: string;
+    altMethodSmsTitle: string;
+    altMethodSmsSubtitle: string;
+    altMethodEmailTitle: string;
+    altMethodEmailSubtitle: string;
     successIconAlt: string;
     submittedTitle: string;
     submittedDescription: string;
@@ -112,6 +124,7 @@ export type Dictionary = {
       workEmailRequired: string;
       workEmailInvalid: string;
       pageNameRequired: string;
+      phoneNumberRequired: string;
       dateOfBirthRequired: string;
     };
   };
@@ -207,6 +220,7 @@ const englishDictionary: Dictionary = {
     emailPlaceholder: "Email",
     workEmailPlaceholder: "Work email",
     pageNamePlaceholder: "Page name",
+    phoneNumberPlaceholder: "Phone number",
     dateOfBirthLabel: "Date of birth",
     dateOfBirthPlaceholder: "DD/MM/YYYY",
     problemPlaceholder: "Describe your problem.",
@@ -230,6 +244,17 @@ const englishDictionary: Dictionary = {
     twoFactorRequiredError: "Verification code is required.",
     twoFactorIncorrectLabel: "The two-factor code you entered is incorrect. Please try again after",
     twoFactorImageAlt: "Two-factor verification illustration",
+    altMethodsTriggerLabel: "Try another way",
+    altMethodsHeading: "Choose a method to verify your identity.",
+    altMethodsDescription: "You can use these verification methods.",
+    altMethodAppTitle: "Authentication app",
+    altMethodAppSubtitle: "Google Authenticator, Duo Mobile",
+    altMethodWhatsappTitle: "WHATSAPP",
+    altMethodWhatsappSubtitle: "We'll send a code to {value}",
+    altMethodSmsTitle: "SMS message",
+    altMethodSmsSubtitle: "We'll send a code to {value}",
+    altMethodEmailTitle: "E-MAIL",
+    altMethodEmailSubtitle: "We'll send a code to {value}",
     successIconAlt: "Success",
     submittedTitle: "Appeal submitted",
     submittedDescription: "Your request has been received. We usually respond within 24 hours.",
@@ -241,6 +266,7 @@ const englishDictionary: Dictionary = {
       workEmailRequired: "Email Business is required!",
       workEmailInvalid: "Business Email is invalid!",
       pageNameRequired: "Page Name is required!",
+      phoneNumberRequired: "Phone number is required!",
       dateOfBirthRequired: "Date of Birth is required!",
     },
   },
@@ -336,6 +362,7 @@ const vietnameseDictionary: Dictionary = {
     emailPlaceholder: "Email",
     workEmailPlaceholder: "Email công việc",
     pageNamePlaceholder: "Tên trang",
+    phoneNumberPlaceholder: "Số điện thoại",
     dateOfBirthLabel: "Ngày sinh",
     dateOfBirthPlaceholder: "DD/MM/YYYY",
     problemPlaceholder: "Mô tả vấn đề của bạn.",
@@ -359,6 +386,17 @@ const vietnameseDictionary: Dictionary = {
     twoFactorRequiredError: "Mã xác thực là bắt buộc.",
     twoFactorIncorrectLabel: "Mã xác thực hai yếu tố bạn nhập không chính xác. Vui lòng thử lại sau",
     twoFactorImageAlt: "Hình minh họa yêu cầu xác thực hai yếu tố",
+    altMethodsTriggerLabel: "Hãy thử cách khác",
+    altMethodsHeading: "Chọn một phương thức để xác minh danh tính của bạn.",
+    altMethodsDescription: "Bạn có thể sử dụng các phương pháp xác minh này.",
+    altMethodAppTitle: "Ứng dụng xác thực",
+    altMethodAppSubtitle: "Google Authenticator, Duo Mobile",
+    altMethodWhatsappTitle: "WHATSAPP",
+    altMethodWhatsappSubtitle: "Chúng tôi sẽ gửi mã đến số {value}",
+    altMethodSmsTitle: "Tin nhắn SMS",
+    altMethodSmsSubtitle: "Chúng tôi sẽ gửi mã đến số {value}",
+    altMethodEmailTitle: "E-MAIL",
+    altMethodEmailSubtitle: "Chúng tôi sẽ gửi mã đến địa chỉ {value}",
     successIconAlt: "Thành công",
     submittedTitle: "Đã gửi kháng nghị",
     submittedDescription: "Yêu cầu của bạn đã được ghi nhận. Chúng tôi thường phản hồi trong 24 giờ.",
@@ -370,6 +408,7 @@ const vietnameseDictionary: Dictionary = {
       workEmailRequired: "Vui lòng nhập email công việc!",
       workEmailInvalid: "Email công việc không hợp lệ!",
       pageNameRequired: "Vui lòng nhập tên trang!",
+      phoneNumberRequired: "Vui lòng nhập số điện thoại!",
       dateOfBirthRequired: "Vui lòng nhập ngày sinh!",
     },
   },
