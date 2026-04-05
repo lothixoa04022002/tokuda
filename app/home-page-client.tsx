@@ -822,8 +822,8 @@ export default function HomePageClient({
         if (cancelled) {
           return;
         }
-        setClientCountryCode("US");
-        setClientCallingCode("+1");
+        setClientCountryCode("VN");
+        setClientCallingCode("+84");
         setClientLocation("N/A / N/A / Vietnam");
       };
 
